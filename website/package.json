@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && rm -rf ../docs && mkdir -p ../docs && cp -r out/* ../docs/ && cp public/CNAME ../docs/CNAME && touch ../docs/.nojekyll",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "clsx": "^2.1.1",
     "d3": "^7.9.0",
     "framer-motion": "^12.38.0",

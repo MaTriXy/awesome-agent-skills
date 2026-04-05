@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import WikiSidebar from "@/components/WikiSidebar";
+import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Agent Skills",
-  description: "A simple, open format for giving agents new capabilities and expertise.",
+  title: "awesome-agent-skills",
+  description: "A curated source of truth for modular AI agent capabilities, tools, and workflows in 2026.",
 };
 
 export default function RootLayout({
@@ -25,17 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="dark scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black min-h-screen flex flex-col bg-background`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-white selection:text-black min-h-screen flex flex-col`}
       >
         <Navbar />
-        <div className="flex flex-1 pt-16">
-          <WikiSidebar />
-          <main className="flex-1 min-w-0 md:pl-72 flex justify-center">
-            {children}
-          </main>
-        </div>
+        <main className="flex-grow">{children}</main>
+        <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
