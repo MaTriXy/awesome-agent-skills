@@ -127,12 +127,15 @@ Codex 支援不同範圍的技能：
 | [product-on-purpose/pm-skills](https://github.com/product-on-purpose/pm-skills) | 24 項產品管理技能，涵蓋探索、定義、交付和優化 |
 | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Google Workspace（Gmail、Chat、Calendar、Docs、Drive、Sheets、Slides）、AI 委託（Jules、Manus、Deep Research）和資料庫技能 |
 | [RioBot-Grind/agentfund-skill](https://github.com/RioBot-Grind/agentfund-skill) | Base 鏈上 AI 代理的群眾募資 — 里程碑託管 |
+| [browser-act/skills](https://github.com/browser-act/skills) | 22個瀏覽器自動化技能，用於從Amazon、YouTube、Google Maps、Reddit、微信和知乎提取結構化數據 |
+| [yshishenya/stitchflow](https://github.com/yshishenya/stitchflow) | 跨代理UI設計技能集合，將簡報和原型轉化為螢幕、變體、HTML和截圖 |
 
 #### 文件處理
 
 | 技能 | 描述 |
 |------|------|
 | [Markdown to EPUB](https://github.com/smerchek/claude-epub-skill) | 將 markdown 文件轉換為專業 EPUB 電子書 |
+| [ru-text](https://github.com/talkstream/ru-text) | 俄語文本品質：約1,040條排版、資訊風格、編輯、UX寫作和商業通信規則 |
 
 #### 開發和程式碼工具
 
@@ -149,6 +152,12 @@ Codex 支援不同範圍的技能：
 | [Stream Coding](https://github.com/frmoretto/stream-coding) | 串流編碼方法論 |
 | [Tool Advisor](https://github.com/dragon1086/claude-skills) | 分析提示並推薦最佳工具、技能、代理和編排模式 |
 | [Vibe Testing](https://github.com/knot0-com/vibe-testing) | 在編寫程式碼之前使用 LLM 推理壓力測試規格文件 |
+| [hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | 從提示生成手繪Excalidraw圖表 — 動畫SVG、託管編輯連結和PNG匯出 |
+| [codex-stitch-local](https://github.com/yshishenya/codex-stitch-local) | 本地HTML和截圖輸出的Stitch UI生成 |
+| [IWE](https://github.com/iwe-org/iwe) | 面向AI代理的CLI知識圖譜訪問 — 通過純Markdown文件實現結構化持久記憶體 |
+| [naming](https://github.com/glacierphonk/naming) | 面向產品、SaaS、品牌和開源專案的隱喻驅動命名 |
+| [ai-native-cli](https://github.com/ChaosRealmsAI/agent-cli-spec) | CLI設計規範 — 構建代理安全CLI工具的98條規則 |
+| [claude-dev-skill](https://github.com/hnaymyh123-henry/claude-dev-skill) | 將Claude轉變為技術負責人，通過PRD對齊、架構、編碼、QA和PR審查的完整工作流程編排並行Worker Agents |
 | [Mantra](https://mantra.gonewx.com) | AI 編碼會話管理 — 儲存、還原和時間旅行 Claude Code、Cursor 和 Windsurf 會話 |
 
 #### 資料和分析
@@ -172,6 +181,8 @@ Codex 支援不同範圍的技能：
 | [AgentStore](https://github.com/techgangboss/agentstore) | 開源外掛市場，支援免 Gas USDC 付款、CLI 安裝和 3 欄位發布 API |
 | [Transloadit Skills](https://github.com/transloadit/skills) | 媒體處理：影片編碼、影像處理、OCR 及 86+ Robots |
 | [commune](https://github.com/shanjairaj7/commune-skill) | 代理原生電子郵件收件匣 — 永久 @commune.ai 地址，完整收發、語義搜尋、分類和 Webhook |
+| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 擁有49個工具的Bitcoin MCP伺服器 — 手續費智能、記憶體池分析、區塊/交易檢查、採礦統計、價格和供應數據 |
+| [datadog-observability](https://github.com/Ivlad003/plugins) | 通過REST API直接從Claude Code查詢和分析Datadog日誌、指標、監控和追蹤 |
 
 #### 協作與專案管理
 

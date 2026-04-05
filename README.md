@@ -128,6 +128,7 @@ Community-maintained skills and collections (verify before use):
 | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Google Workspace (Gmail, Chat, Calendar, Docs, Drive, Sheets, Slides), AI delegation (Jules, Manus, Deep Research), and database skills |
 | [RioBot-Grind/agentfund-skill](https://github.com/RioBot-Grind/agentfund-skill) | Crowdfunding for AI agents on Base chain - milestone escrow |
 | [browser-act/skills](https://github.com/browser-act/skills) | 22 browser automation skills for structured data extraction from Amazon, YouTube, Google Maps, Reddit, WeChat, and Zhihu |
+| [yshishenya/stitchflow](https://github.com/yshishenya/stitchflow) | Cross-agent UI design skill collection for turning briefs and mockups into screens, variants, HTML, and screenshots |
 
 #### Document Processing
 
@@ -155,6 +156,9 @@ Community-maintained skills and collections (verify before use):
 | [codex-stitch-local](https://github.com/yshishenya/codex-stitch-local) | Stitch UI generation with local HTML and screenshots |
 | [Mantra](https://mantra.gonewx.com) | AI coding session management - save, restore, and time-travel through Claude Code, Cursor, and Windsurf sessions |
 | [IWE](https://github.com/iwe-org/iwe) | CLI-based knowledge graph access for AI agents — structured persistent memory via plain markdown files |
+| [naming](https://github.com/glacierphonk/naming) | Metaphor-driven naming for products, SaaS, brands, and open source projects |
+| [ai-native-cli](https://github.com/ChaosRealmsAI/agent-cli-spec) | CLI design spec — 98 rules for building agent-safe CLI tools |
+| [claude-dev-skill](https://github.com/hnaymyh123-henry/claude-dev-skill) | Turns Claude into a Tech Lead orchestrating parallel Worker Agents through a full dev workflow: PRD alignment, architecture, coding, QA, and PR review |
 
 #### Data & Analysis
 
@@ -178,6 +182,7 @@ Community-maintained skills and collections (verify before use):
 | [Transloadit Skills](https://github.com/transloadit/skills) | Media processing: video encoding, image manipulation, OCR, and 86+ Robots |
 | [commune](https://github.com/shanjairaj7/commune-skill) | Agent-native email inbox — permanent @commune.ai address with full send/receive, semantic search, triage, and webhooks |
 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Bitcoin MCP server with 49 tools — fee intelligence, mempool analysis, block/transaction inspection, mining stats, price and supply data |
+| [datadog-observability](https://github.com/Ivlad003/plugins) | Query and analyze Datadog logs, metrics, monitors, and traces directly from Claude Code via REST API |
 
 #### Collaboration & Project Management
 

@@ -127,12 +127,15 @@ Codex는 다양한 범위의 스킬을 지원합니다:
 | [product-on-purpose/pm-skills](https://github.com/product-on-purpose/pm-skills) | 24개 제품 관리 스킬: 발견, 정의, 전달, 최적화 포함 |
 | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Google Workspace (Gmail, Chat, Calendar, Docs, Drive, Sheets, Slides), AI 위임 (Jules, Manus, Deep Research) 및 데이터베이스 스킬 |
 | [RioBot-Grind/agentfund-skill](https://github.com/RioBot-Grind/agentfund-skill) | Base 체인의 AI 에이전트용 크라우드펀딩 — 마일스톤 에스크로 |
+| [browser-act/skills](https://github.com/browser-act/skills) | Amazon, YouTube, Google Maps, Reddit, WeChat, 知乎에서 구조화된 데이터를 추출하는 22개의 브라우저 자동화 스킬 |
+| [yshishenya/stitchflow](https://github.com/yshishenya/stitchflow) | 브리프와 목업을 화면, 변형, HTML, 스크린샷으로 변환하는 크로스 에이전트 UI 디자인 스킬 컬렉션 |
 
 #### 문서 처리
 
 | 스킬 | 설명 |
 |------|------|
 | [Markdown to EPUB](https://github.com/smerchek/claude-epub-skill) | Markdown 문서를 전문적인 EPUB 전자지갑으로 변환 |
+| [ru-text](https://github.com/talkstream/ru-text) | 러시아어 텍스트 품질: 타이포그래피, 정보 스타일, 편집, UX 라이팅, 비즈니스 서신을 위한 약 1,040개의 규칙 |
 
 #### 개발 및 코드 도구
 
@@ -149,6 +152,12 @@ Codex는 다양한 범위의 스킬을 지원합니다:
 | [Stream Coding](https://github.com/frmoretto/stream-coding) | 스트림 코딩 방법론 |
 | [Tool Advisor](https://github.com/dragon1086/claude-skills) | 프롬프트를 분석하고 최적의 도구, 스킬, 에이전트 및 오케스트레이션 패턴 추천 |
 | [Vibe Testing](https://github.com/knot0-com/vibe-testing) | 코드 작성 전 LLM 추론으로 사양 문서 압력 테스트 |
+| [hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | 프롬프트에서 손으로 그린 Excalidraw 다이어그램 생성 — 애니메이션 SVG, 호스팅된 편집 링크, PNG 내보내기 |
+| [codex-stitch-local](https://github.com/yshishenya/codex-stitch-local) | 로컬 HTML 및 스크린샷 출력으로 Stitch UI 생성 |
+| [IWE](https://github.com/iwe-org/iwe) | AI 에이전트를 위한 CLI 기반 지식 그래프 접근 — 일반 마크다운 파일을 통한 구조화된 영구 메모리 |
+| [naming](https://github.com/glacierphonk/naming) | 제품, SaaS, 브랜드, 오픈소스 프로젝트를 위한 은유 기반 명명 |
+| [ai-native-cli](https://github.com/ChaosRealmsAI/agent-cli-spec) | CLI 디자인 사양 — 에이전트 안전 CLI 도구 구축을 위한 98개의 규칙 |
+| [claude-dev-skill](https://github.com/hnaymyh123-henry/claude-dev-skill) | Claude를 PRD 정렬, 아키텍처, 코딩, QA, PR 리뷰의 완전한 개발 워크플로우로 Worker Agent를 병렬 오케스트레이션하는 Tech Lead로 전환 |
 | [Mantra](https://mantra.gonewx.com) | AI 코딩 세션 관리 — Claude Code, Cursor, Windsurf 세션 저장, 복원, 타임 트래블 |
 
 #### 데이터 및 분석
@@ -172,6 +181,8 @@ Codex는 다양한 범위의 스킬을 지원합니다:
 | [AgentStore](https://github.com/techgangboss/agentstore) | 오픈소스 플러그인 마켓플레이스, 가스리스 USDC 결제, CLI 설치, 3필드 게시 API |
 | [Transloadit Skills](https://github.com/transloadit/skills) | 미디어 처리: 비디오 인코딩, 이미지 조작, OCR 및 86+ Robots |
 | [commune](https://github.com/shanjairaj7/commune-skill) | 에이전트 네이티브 이메일 수신함 — 영구 @commune.ai 주소, 완전한 송수신, 시맨틱 검색, 분류 및 웹훅 |
+| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49개 도구를 갖춘 Bitcoin MCP 서버 — 수수료 인텔리전스, 멤풀 분석, 블록/트랜잭션 검사, 채굴 통계, 가격 및 공급 데이터 |
+| [datadog-observability](https://github.com/Ivlad003/plugins) | REST API를 통해 Claude Code에서 직접 Datadog 로그, 메트릭, 모니터, 트레이스를 쿼리하고 분석 |
 
 #### 협업 및 프로젝트 관리
 

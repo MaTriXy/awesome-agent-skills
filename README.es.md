@@ -127,12 +127,15 @@ Habilidades y colecciones mantenidas por la comunidad (verificar antes de usar):
 | [product-on-purpose/pm-skills](https://github.com/product-on-purpose/pm-skills) | 24 habilidades de gestión de producto: descubrimiento, definición, entrega y optimización |
 | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Google Workspace (Gmail, Chat, Calendar, Docs, Drive, Sheets, Slides), delegación de IA (Jules, Manus, Deep Research) y habilidades de bases de datos |
 | [RioBot-Grind/agentfund-skill](https://github.com/RioBot-Grind/agentfund-skill) | Crowdfunding para agentes de IA en cadena Base — custodia por hitos |
+| [browser-act/skills](https://github.com/browser-act/skills) | 22 habilidades de automatización de navegador para extracción de datos estructurados de Amazon, YouTube, Google Maps, Reddit, WeChat y Zhihu |
+| [yshishenya/stitchflow](https://github.com/yshishenya/stitchflow) | Colección de habilidades de diseño UI multi-agente para convertir briefs y maquetas en pantallas, variantes, HTML y capturas de pantalla |
 
 #### Procesamiento de Documentos
 
 | Habilidad | Descripción |
 |------|------|
 | [Markdown to EPUB](https://github.com/smerchek/claude-epub-skill) | Convierte documentos markdown en libros electrónicos EPUB profesionales |
+| [ru-text](https://github.com/talkstream/ru-text) | Calidad de texto en ruso: ~1.040 reglas de tipografía, estilo informativo, editorial, escritura UX y correspondencia empresarial |
 
 #### Herramientas de Desarrollo y Código
 
@@ -149,6 +152,12 @@ Habilidades y colecciones mantenidas por la comunidad (verificar antes de usar):
 | [Stream Coding](https://github.com/frmoretto/stream-coding) | Metodología de Stream Coding |
 | [Tool Advisor](https://github.com/dragon1086/claude-skills) | Analiza prompts y recomienda herramientas, habilidades, agentes y patrones de orquestación óptimos |
 | [Vibe Testing](https://github.com/knot0-com/vibe-testing) | Prueba de estrés de documentos de especificación con razonamiento LLM antes de escribir código |
+| [hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | Genera diagramas Excalidraw a mano alzada desde un prompt — SVG animado, enlace de edición alojado y exportación PNG |
+| [codex-stitch-local](https://github.com/yshishenya/codex-stitch-local) | Generación de UI con Stitch con HTML local y capturas de pantalla |
+| [IWE](https://github.com/iwe-org/iwe) | Acceso CLI a grafos de conocimiento para agentes de IA — memoria persistente estructurada mediante archivos markdown simples |
+| [naming](https://github.com/glacierphonk/naming) | Nomenclatura basada en metáforas para productos, SaaS, marcas y proyectos de código abierto |
+| [ai-native-cli](https://github.com/ChaosRealmsAI/agent-cli-spec) | Especificación de diseño CLI — 98 reglas para construir herramientas CLI seguras para agentes |
+| [claude-dev-skill](https://github.com/hnaymyh123-henry/claude-dev-skill) | Convierte Claude en un Tech Lead que orquesta Worker Agents paralelos: alineación de PRD, arquitectura, codificación, QA y revisión de PR |
 | [Mantra](https://mantra.gonewx.com) | Gestión de sesiones de codificación AI — guardar, restaurar y viajar en el tiempo en sesiones de Claude Code, Cursor y Windsurf |
 
 #### Datos y Análisis
@@ -172,6 +181,8 @@ Habilidades y colecciones mantenidas por la comunidad (verificar antes de usar):
 | [AgentStore](https://github.com/techgangboss/agentstore) | Marketplace de plugins de código abierto con pagos USDC sin gas, instalación CLI y API de publicación de 3 campos |
 | [Transloadit Skills](https://github.com/transloadit/skills) | Procesamiento de medios: codificación de video, manipulación de imágenes, OCR y 86+ Robots |
 | [commune](https://github.com/shanjairaj7/commune-skill) | Bandeja de correo nativa para agentes — dirección permanente @commune.ai con envío/recepción completo, búsqueda semántica, triaje y webhooks |
+| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Servidor MCP de Bitcoin con 49 herramientas — inteligencia de comisiones, análisis de mempool, inspección de bloques/transacciones, estadísticas de minería, datos de precio y suministro |
+| [datadog-observability](https://github.com/Ivlad003/plugins) | Consulta y analiza logs, métricas, monitores y trazas de Datadog directamente desde Claude Code vía API REST |
 
 #### Colaboración y Gestión de Proyectos
 

@@ -127,12 +127,15 @@ Codex 支持不同范围的技能：
 | [product-on-purpose/pm-skills](https://github.com/product-on-purpose/pm-skills) | 24 项产品管理技能，涵盖发现、定义、交付和优化 |
 | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Google Workspace（Gmail、Chat、Calendar、Docs、Drive、Sheets、Slides）、AI 委托（Jules、Manus、Deep Research）和数据库技能 |
 | [RioBot-Grind/agentfund-skill](https://github.com/RioBot-Grind/agentfund-skill) | Base 链上 AI 代理的众筹 — 里程碑托管 |
+| [browser-act/skills](https://github.com/browser-act/skills) | 22个浏览器自动化技能，用于从Amazon、YouTube、Google Maps、Reddit、微信和知乎提取结构化数据 |
+| [yshishenya/stitchflow](https://github.com/yshishenya/stitchflow) | 跨代理UI设计技能集合，将简报和原型转化为屏幕、变体、HTML和截图 |
 
 #### 文档处理
 
 | 技能 | 描述 |
 |------|------|
 | [Markdown to EPUB](https://github.com/smerchek/claude-epub-skill) | 将 markdown 文档转换为专业 EPUB 电子书 |
+| [ru-text](https://github.com/talkstream/ru-text) | 俄语文本质量：约1,040条排版、信息风格、编辑、UX写作和商业通信规则 |
 
 #### 开发和代码工具
 
@@ -149,6 +152,12 @@ Codex 支持不同范围的技能：
 | [Stream Coding](https://github.com/frmoretto/stream-coding) | 流式编码方法论 |
 | [Tool Advisor](https://github.com/dragon1086/claude-skills) | 分析提示并推荐最佳工具、技能、代理和编排模式 |
 | [Vibe Testing](https://github.com/knot0-com/vibe-testing) | 在编写代码之前使用 LLM 推理压力测试规格文档 |
+| [hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | 从提示生成手绘Excalidraw图表 — 动画SVG、托管编辑链接和PNG导出 |
+| [codex-stitch-local](https://github.com/yshishenya/codex-stitch-local) | 本地HTML和截图输出的Stitch UI生成 |
+| [IWE](https://github.com/iwe-org/iwe) | 面向AI代理的CLI知识图谱访问 — 通过纯Markdown文件实现结构化持久内存 |
+| [naming](https://github.com/glacierphonk/naming) | 面向产品、SaaS、品牌和开源项目的隐喻驱动命名 |
+| [ai-native-cli](https://github.com/ChaosRealmsAI/agent-cli-spec) | CLI设计规范 — 构建代理安全CLI工具的98条规则 |
+| [claude-dev-skill](https://github.com/hnaymyh123-henry/claude-dev-skill) | 将Claude转变为技术负责人，通过PRD对齐、架构、编码、QA和PR审查的完整工作流程编排并行Worker Agents |
 | [Mantra](https://mantra.gonewx.com) | AI 编码会话管理 — 保存、恢复和时间旅行 Claude Code、Cursor 和 Windsurf 会话 |
 
 #### 数据和分析
@@ -172,6 +181,8 @@ Codex 支持不同范围的技能：
 | [AgentStore](https://github.com/techgangboss/agentstore) | 开源插件市场，支持免 Gas USDC 支付、CLI 安装和 3 字段发布 API |
 | [Transloadit Skills](https://github.com/transloadit/skills) | 媒体处理：视频编码、图像处理、OCR 及 86+ Robots |
 | [commune](https://github.com/shanjairaj7/commune-skill) | 代理原生电子邮件收件箱 — 永久 @commune.ai 地址，完整收发、语义搜索、分类和 Webhook |
+| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 拥有49个工具的Bitcoin MCP服务器 — 手续费智能、内存池分析、区块/交易检查、挖矿统计、价格和供应数据 |
+| [datadog-observability](https://github.com/Ivlad003/plugins) | 通过REST API直接从Claude Code查询和分析Datadog日志、指标、监控和追踪 |
 
 #### 协作与项目管理
 

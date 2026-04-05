@@ -127,12 +127,15 @@ Codexは異なるスコープのスキルをサポートしています：
 | [product-on-purpose/pm-skills](https://github.com/product-on-purpose/pm-skills) | 24のプロダクトマネジメントスキル：発見、定義、デリバリー、最適化をカバー |
 | [sanjay3290/ai-skills](https://github.com/sanjay3290/ai-skills) | Google Workspace（Gmail、Chat、Calendar、Docs、Drive、Sheets、Slides）、AI委任（Jules、Manus、Deep Research）、データベーススキル |
 | [RioBot-Grind/agentfund-skill](https://github.com/RioBot-Grind/agentfund-skill) | Baseチェーン上のAIエージェント向けクラウドファンディング — マイルストーンエスクロー |
+| [browser-act/skills](https://github.com/browser-act/skills) | Amazon、YouTube、Google Maps、Reddit、WeChat、知乎からの構造化データ抽出のための22のブラウザ自動化スキル |
+| [yshishenya/stitchflow](https://github.com/yshishenya/stitchflow) | ブリーフやモックアップを画面、バリアント、HTML、スクリーンショットに変換するクロスエージェントUIデザインスキルコレクション |
 
 #### ドキュメント処理
 
 | スキル | 説明 |
 |------|------|
 | [Markdown to EPUB](https://github.com/smerchek/claude-epub-skill) | MarkdownドキュメントをプロフェッショナルなEPUB電子書籍に変換 |
+| [ru-text](https://github.com/talkstream/ru-text) | ロシア語テキスト品質：タイポグラフィ、情報スタイル、編集、UXライティング、ビジネス文書のための約1,040のルール |
 
 #### 開発・コードツール
 
@@ -149,6 +152,12 @@ Codexは異なるスコープのスキルをサポートしています：
 | [Stream Coding](https://github.com/frmoretto/stream-coding) | ストリームコーディング手法 |
 | [Tool Advisor](https://github.com/dragon1086/claude-skills) | プロンプトを分析し、最適なツール、スキル、エージェント、オーケストレーションパターンを推奨 |
 | [Vibe Testing](https://github.com/knot0-com/vibe-testing) | コードを書く前にLLM推論で仕様書を圧力テスト |
+| [hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) | プロンプトからExcalidrawの手描き図を生成 — アニメーションSVG、ホスト型編集リンク、PNG出力 |
+| [codex-stitch-local](https://github.com/yshishenya/codex-stitch-local) | ローカルHTMLとスクリーンショット出力によるStitch UI生成 |
+| [IWE](https://github.com/iwe-org/iwe) | AIエージェント向けCLIベースのナレッジグラフアクセス — プレーンマークダウンファイルによる構造化永続メモリ |
+| [naming](https://github.com/glacierphonk/naming) | 製品、SaaS、ブランド、オープンソースプロジェクトのメタファー駆動命名 |
+| [ai-native-cli](https://github.com/ChaosRealmsAI/agent-cli-spec) | CLIデザイン仕様 — エージェント安全なCLIツール構築のための98のルール |
+| [claude-dev-skill](https://github.com/hnaymyh123-henry/claude-dev-skill) | ClaudeをTech Leadに変え、PRD整合、アーキテクチャ、コーディング、QA、PRレビューでWorker Agentsを並列オーケストレーション |
 | [Mantra](https://mantra.gonewx.com) | AIコーディングセッション管理 — Claude Code、Cursor、Windsurfセッションの保存・復元・タイムトラベル |
 
 #### データ・分析
@@ -172,6 +181,8 @@ Codexは異なるスコープのスキルをサポートしています：
 | [AgentStore](https://github.com/techgangboss/agentstore) | オープンソースプラグインマーケットプレイス、ガスレスUSDC決済、CLIインストール、3フィールド公開API |
 | [Transloadit Skills](https://github.com/transloadit/skills) | メディア処理：動画エンコード、画像加工、OCR、86以上のRobots |
 | [commune](https://github.com/shanjairaj7/commune-skill) | エージェントネイティブメール受信箱 — 永続的な@commune.aiアドレス、完全な送受信、セマンティック検索、トリアージ、Webhook |
+| [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | 49ツールを持つBitcoin MCPサーバー — 手数料インテリジェンス、メンプール分析、ブロック/トランザクション検査、マイニング統計、価格と供給データ |
+| [datadog-observability](https://github.com/Ivlad003/plugins) | REST API経由でClaude CodeからDatadogのログ、メトリクス、モニター、トレースを直接クエリ・分析 |
 
 #### コラボレーション・プロジェクト管理
 
