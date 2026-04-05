@@ -187,6 +187,8 @@ Community-maintained skills and collections (verify before use):
 | [bitcoin-mcp](https://github.com/Bortlesboat/bitcoin-mcp) | Bitcoin MCP server with 49 tools — fee intelligence, mempool analysis, block/transaction inspection, mining stats, price and supply data |
 | [datadog-observability](https://github.com/Ivlad003/plugins) | Query and analyze Datadog logs, metrics, monitors, and traces directly from Claude Code via REST API |
 
+| [meyhem-search](https://github.com/c5huracan/meyhem) | Agent-native web search with feedback-driven ranking via REST API and MCP server |
+
 #### Collaboration & Project Management
 
 | Skill | Description |
