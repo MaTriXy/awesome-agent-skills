@@ -6,7 +6,7 @@
 
 > 🌐 Browse the live directory at **[agent-skill.co](https://agent-skill.co)**
 
-Maintained by [Hailey Cheng](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
+Maintained by [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
 Never heard of "agent skills" before? You're in the right place. This is a community-curated list of simple text files that teach AI assistants (like Claude, Copilot, or Codex) how to do new things on demand, without retraining. Unlike bulk-generated skill repositories, this collection focuses on real-world Agent Skills created and used by actual engineering teams. Compatible with Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, Windsurf, and more.
 
@@ -816,7 +816,7 @@ Quick summary:
 
 Questions, partnership inquiries, or feedback about this project:
 
-- LinkedIn: [Hailey Cheng](https://www.linkedin.com/in/heilcheng/)
+- LinkedIn: [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/)
 - X / Twitter: [@haileyhmt](https://x.com/haileyhmt)
 - Email: [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
@@ -828,7 +828,7 @@ If you use these skill patterns in your research or project, please cite:
 
 ```bibtex
 @misc{awesome-agent-skills,
-  author = {Hailey Cheng},
+  author = {Cheng Hei Lam},
   title = {Agent Skill Index},
   year = {2026},
   publisher = {GitHub},

@@ -102,18 +102,18 @@ export default function SnakeGame() {
   }, [score, highScore]);
 
   return (
-    <div className="w-full max-w-[400px] mx-auto bg-white rounded-2xl border-4 border-neutral-200 shadow-2xl overflow-hidden flex flex-col font-sans select-none aspect-square lg:aspect-auto lg:h-[450px]">
+    <div className="w-full max-w-[400px] mx-auto bg-white dark:bg-neutral-900 rounded-2xl border-4 border-neutral-200 dark:border-neutral-800 shadow-2xl overflow-hidden flex flex-col font-sans select-none aspect-square lg:aspect-auto lg:h-[450px] transition-colors">
       
       {/* Browser Bar */}
-      <div className="h-10 bg-neutral-100 border-b border-neutral-200 flex items-center px-4 justify-between">
+      <div className="h-10 bg-neutral-100 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 flex items-center px-4 justify-between transition-colors">
         <div className="flex gap-1.5">
           <div className="w-2.5 h-2.5 rounded-full bg-rose-400" />
           <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
           <div className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
         </div>
-        <div className="flex-1 mx-6 h-6 bg-white rounded-md border border-neutral-200 flex items-center px-3 gap-2 overflow-hidden">
-          <Globe className="w-3 h-3 text-neutral-400" />
-          <span className="text-[10px] text-neutral-400 font-mono truncate">agent-skill.co/simulator/snake</span>
+        <div className="flex-1 mx-6 h-6 bg-white dark:bg-neutral-800 rounded-md border border-neutral-200 dark:border-neutral-700 flex items-center px-3 gap-2 overflow-hidden transition-colors">
+          <Globe className="w-3 h-3 text-neutral-400 dark:text-neutral-500" />
+          <span className="text-[10px] text-neutral-400 dark:text-neutral-500 font-mono truncate">agent-skill.co/simulator/snake</span>
         </div>
         <div className="flex gap-3 text-neutral-400 hover:text-neutral-600">
            <Minus className="w-3.5 h-3.5" />
@@ -123,21 +123,21 @@ export default function SnakeGame() {
       </div>
 
       {/* Game Content Area */}
-      <div className="flex-1 relative bg-neutral-50 p-4 flex flex-col">
+      <div className="flex-1 relative bg-neutral-50 dark:bg-neutral-900/50 p-4 flex flex-col transition-colors">
         {/* Scoreboard */}
         <div className="flex justify-between items-center mb-4 px-2">
             <div className="flex flex-col">
-                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{t.snake.score}</span>
-                <span className="text-xl font-black text-neutral-800">{score}</span>
+                <span className="text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-widest">{t.snake.score}</span>
+                <span className="text-xl font-black text-neutral-800 dark:text-neutral-100">{score}</span>
             </div>
             <div className="flex flex-col items-end">
-                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{t.snake.best}</span>
-                <span className="text-xl font-black text-neutral-400">{highScore}</span>
+                <span className="text-[10px] font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-widest">{t.snake.best}</span>
+                <span className="text-xl font-black text-neutral-400 dark:text-neutral-600">{highScore}</span>
             </div>
         </div>
 
         {/* The Grid Canvas */}
-        <div className="flex-1 relative bg-white rounded-xl border-2 border-neutral-200 overflow-hidden shadow-inner grid grid-cols-20 grid-rows-20">
+        <div className="flex-1 relative bg-white dark:bg-neutral-900 rounded-xl border-2 border-neutral-200 dark:border-neutral-800 overflow-hidden shadow-inner grid grid-cols-20 grid-rows-20 transition-colors">
           {/* Render Snake */}
           {snake.map((s, i) => (
             <div
@@ -178,12 +178,12 @@ export default function SnakeGame() {
           
           {/* Overlays */}
           {!playing && (
-            <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] flex flex-col items-center justify-center p-6 text-center animate-in fade-in zoom-in duration-300">
+            <div className="absolute inset-0 bg-white/60 dark:bg-neutral-900/80 backdrop-blur-[2px] flex flex-col items-center justify-center p-6 text-center animate-in fade-in zoom-in duration-300">
                 <div className="mb-6">
-                    <div className="text-2xl font-black text-neutral-800 tracking-tighter mb-1 uppercase">
+                    <div className="text-2xl font-black text-neutral-800 dark:text-neutral-100 tracking-tighter mb-1 uppercase">
                         {gameOver ? t.snake.gameOver : t.snake.title}
                     </div>
-                    <p className="text-xs text-neutral-500 font-medium leading-relaxed">
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400 font-medium leading-relaxed">
                         {t.snake.desc}
                     </p>
                 </div>

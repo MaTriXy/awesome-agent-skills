@@ -6,7 +6,7 @@
 
 > 🌐 **[agent-skill.co](https://agent-skill.co)**: Explora el directorio en vivo
 
-Mantenido por [Hailey Cheng](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
+Mantenido por [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
 ¿Nunca has oído hablar de las "agent skills"? Estás en el lugar correcto. Esta es una lista curada por la comunidad de archivos de texto simples que enseñan a los asistentes de IA (como Claude, Copilot o Codex) cómo hacer cosas nuevas bajo demanda, sin necesidad de reentrenamiento. A diferencia de los repositorios de habilidades generados en masa, esta colección se centra en Agent Skills del mundo real creadas y utilizadas por equipos de ingeniería reales. Compatible con Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, Windsurf y más.
 
@@ -171,7 +171,7 @@ El fine-tuning cambia permanentemente la forma en que piensa una IA (es caro y d
 
 Preguntas, consultas de asociación o comentarios sobre este proyecto:
 
-- LinkedIn: [Hailey Cheng](https://www.linkedin.com/in/heilcheng/)
+- LinkedIn: [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/)
 - X / Twitter: [@haileyhmt](https://x.com/haileyhmt)
 - Email: [haileycheng@proton.me](mailto:haileycheng@proton.me)
 

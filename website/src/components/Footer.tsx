@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="max-w-xs text-xs text-zinc-500 dark:text-zinc-400 font-medium space-y-1">
               <p>Questions, partnership inquiries, or feedback about this project:</p>
               <ul className="list-disc pl-4 space-y-0.5">
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/heilcheng/" target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-white hover:underline">Hailey Cheng</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/heilcheng/" target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-white hover:underline">Cheng Hei Lam</a></li>
                 <li>X / Twitter: <a href="https://x.com/haileyhmt" target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-white hover:underline">@haileyhmt</a></li>
                 <li>Email: <a href="mailto:haileycheng@proton.me" className="text-zinc-900 dark:text-white hover:underline">haileycheng@proton.me</a></li>
               </ul>
@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="max-w-xs text-xs text-zinc-500 dark:text-zinc-600 bg-zinc-50 dark:bg-zinc-900/50 p-3 rounded-lg mt-2 font-mono">
               <p className="font-semibold text-[10px] uppercase tracking-wider mb-1">Citation</p>
               @misc&#123;awesome-agent-skills,
-                author = &#123;Hailey Cheng&#125;,
+                author = &#123;Cheng Hei Lam&#125;,
                 title = &#123;Agent Skill Index&#125;,
                 year = &#123;2026&#125;,
                 publisher = &#123;GitHub&#125;,

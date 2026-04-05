@@ -6,7 +6,7 @@
 
 > 🌐 在 **[agent-skill.co](https://agent-skill.co)** 浏览实时目录
 
-维护者：[Hailey Cheng](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
+维护者：[Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
 从未听说过“agent skills”？你来对地方了。这是一份由社区精选的清单，收录了简单的文本文件，能教 AI 助理（如 Claude、Copilot 或 Codex）按需学习新能力，无需重新训练。与批量生成的技能库不同，本集合专注于由实际工程团队创建并使用的真实世界 Agent 技能。兼容 Claude Code、Codex、Antigravity、Gemini CLI、Cursor、GitHub Copilot、Windsurf 等。
 
@@ -177,7 +177,7 @@ Agent Skills 是教导 AI 助理如何执行特定任务的指令文件。它们
 
 有关此项目的问题、合作洽谈或意见反馈：
 
-- LinkedIn: [Hailey Cheng](https://www.linkedin.com/in/heilcheng/)
+- LinkedIn: [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/)
 - X / Twitter: [@haileyhmt](https://x.com/haileyhmt)
 - Email: [haileycheng@proton.me](mailto:haileycheng@proton.me)
 

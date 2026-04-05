@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "Agent Skill Index - The Ultimate AI Agent Skills List & Tutorials",
   description: "Explore the most comprehensive list of AI agent skills, tools, and workflows. Master agentic AI with our curated skill list, tutorials, and quality standards for 2026.",
   keywords: ["agent skill list", "skill list", "skill tutorial", "agentic ai", "ai agent", "mcp skills", "ai coding assistants", "claude code", "github copilot skills"],
-  authors: [{ name: "Hailey Cheng" }],
+  authors: [{ name: "Cheng Hei Lam" }],
   openGraph: {
     title: "Agent Skill Index",
     description: "The definitive repository for AI agent skills and tutorials.",

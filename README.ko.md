@@ -6,7 +6,7 @@
 
 > 🌐 **[agent-skill.co](https://agent-skill.co)** 에서 실시간 디렉토리를 탐색하세요.
 
-관리자: [Hailey Cheng](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
+관리자: [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
 "agent skills"를 처음 들어보셨나요? 잘 찾아오셨습니다. 이곳은 Claude, Copilot, Codex 같은 AI 어시스턴트에게 재훈련 없이 필요할 때마다 새로운 기능을 가르쳐주는 간단한 텍스트 파일들을 모아놓은 커뮤니티 큐레이션 목록입니다. 대량 생성된 스킬 저장소와 달리, 이 컬렉션은 실제 엔지니어링 팀이 생성하고 사용하는 실무 에이전트 스킬에 집중합니다. Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, Windsurf 등과 호환됩니다.
 
@@ -167,7 +167,7 @@ Agent Skills는 AI 어시스턴트에게 특정 작업을 수행하는 방법을
 
 이 프로젝트에 대한 질문, 파트너십 문의 또는 피드백:
 
-- LinkedIn: [Hailey Cheng](https://www.linkedin.com/in/heilcheng/)
+- LinkedIn: [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/)
 - X / Twitter: [@haileyhmt](https://x.com/haileyhmt)
 - Email: [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
