@@ -15,59 +15,21 @@ Compatible with Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copi
 - [Compatible Agents](#compatible-agents)
 - [Official Skill Directories](#official-skill-directories)
   - [AI Platforms & Models](#ai-platforms--models)
-    - [Official Claude Skills](#official-claude-skills)
-    - [Skills by OpenAI (Codex)](#skills-by-openai)
-    - [Skills by Google Gemini](#skills-by-google-gemini)
-    - [Skills by Hugging Face](#skills-by-hugging-face)
-    - [Skills by Replicate](#skills-by-replicate)
-    - [Skills by fal.ai](#skills-by-falai)
-    - [Skills by MiniMax](#skills-by-minimax)
   - [Cloud & Infrastructure](#cloud--infrastructure)
-    - [Skills by Cloudflare](#skills-by-cloudflare)
-    - [Skills by Netlify](#skills-by-netlify)
-    - [Skills by Vercel](#skills-by-vercel)
-    - [Skills by HashiCorp (Terraform)](#skills-by-hashicorp)
-    - [Skills by Neon](#skills-by-neon)
-    - [Skill by ClickHouse](#skill-by-clickhouse)
-    - [Skills by Supabase](#skills-by-supabase)
-    - [Skills by Tinybird](#skills-by-tinybird)
   - [Developer Tools & Frameworks](#developer-tools--frameworks)
-    - [Skills by VoltAgent](#skills-by-voltagent)
-    - [Skills by CallStack](#skills-by-callstack)
-    - [Skills by Expo](#skills-by-expo)
-    - [Skills by Remotion](#skills-by-remotion)
-    - [Skills by GSAP](#skills-by-gsap)
-    - [Skills by DuckDB](#skills-by-duckdb)
-    - [Skills by WordPress](#skills-by-wordpress)
-    - [Skills by Figma](#skills-by-figma)
   - [Google Ecosystem](#google-ecosystem)
-    - [Skills by Google Labs (Stitch)](#skills-by-google-labs-stitch)
-    - [Skills by Google Workspace CLI](#skills-by-google-workspace-cli)
   - [Business, Productivity & Marketing](#business-productivity--marketing)
-    - [Skills by Stripe](#skills-by-stripe)
-    - [Skills by Courier](#skills-by-courier)
-    - [Skills by Typefully](#skills-by-typefully)
-    - [Skills by Composio](#skills-by-composio)
-    - [Skills by Notion](#skills-by-notion)
-    - [Skills by Resend](#skills-by-resend)
-    - [Skills by Sanity](#skills-by-sanity)
-    - [Skills by Better Auth](#skills-by-better-auth)
-    - [Marketing Skills by Corey Haines](#marketing-skills-by-corey-haines)
-    - [Product Manager Skills by Dean Peters](#product-manager-skills-by-dean-peters)
-    - [Product Management Skills by Pawel Huryn](#product-management-skills-by-pawel-huryn)
-    - [Skills by Garry Tan (gstack)](#skills-by-garry-tan-gstack)
   - [Security & Web Intelligence](#security--web-intelligence)
-    - [Skills by Trail of Bits](#skills-by-trail-of-bits)
-    - [Skills by Sentry](#skills-by-sentry)
-    - [Skills by Firecrawl](#skills-by-firecrawl)
-    - [Skills by Microsoft](#skills-by-microsoft)
-    - [Skills by Binance](#skills-by-binance)
 - [Community Skills](#community-skills)
+  - [Vector Databases](#vector-databases)
+  - [Marketing](#marketing)
+  - [Productivity and Collaboration](#productivity-and-collaboration)
+  - [Development and Testing](#development-and-testing)
+  - [Context Engineering](#context-engineering)
 - [Skill Quality Standards](#skill-quality-standards)
 - [Using Skills](#using-skills)
 - [Creating Skills](#creating-skills)
 - [Official Tutorials and Guides](#official-tutorials-and-guides)
-- [Additional Vendor Repositories](#additional-vendor-repositories)
 - [Trends & Capabilities (2026)](#trends--capabilities-2026)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Contributing](#contributing)
@@ -144,303 +106,299 @@ npx skills remove [skill-name]     # Uninstall skills
 
 ### AI Platforms & Models
 
-#### Official Claude Skills
-
-Claude provides built-in skills for common document types and workflows. Install from [anthropics/skills](https://github.com/anthropics/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [docx](https://github.com/anthropics/skills/tree/main/docx) | Create, edit, analyze Word documents with tracked changes |
-| [xlsx](https://github.com/anthropics/skills/tree/main/xlsx) | Spreadsheet manipulation: formulas, charts, data transformations |
-| [pptx](https://github.com/anthropics/skills/tree/main/pptx) | Read, generate, and adjust slides, layouts, templates |
-| [pdf](https://github.com/anthropics/skills/tree/main/pdf) | Extract text, tables, metadata from PDFs |
-| [algorithmic-art](https://github.com/anthropics/skills/tree/main/algorithmic-art) | Create generative art using p5.js with seeded randomness |
-| [canvas-design](https://github.com/anthropics/skills/tree/main/canvas-design) | Design visual art in PNG and PDF formats |
-| [frontend-design](https://github.com/anthropics/skills/tree/main/frontend-design) | Frontend design and UI/UX development tools |
-| [webapp-testing](https://github.com/anthropics/skills/tree/main/webapp-testing) | Test local web applications using Playwright |
-| [mcp-builder](https://github.com/anthropics/skills/tree/main/mcp-builder) | Create MCP servers to integrate external APIs and services |
-| [skill-creator](https://github.com/anthropics/skills/tree/main/skill-creator) | Guide for creating skills that extend Claude's capabilities |
+#### Skills by Anthropic
+Official built-in skills for common document types and creative workflows.
+- [anthropics/docx](https://officialskills.sh/anthropics/skills/docx) - Create, edit, and analyze Word documents
+- [anthropics/doc-coauthoring](https://officialskills.sh/anthropics/skills/doc-coauthoring) - Collaborative document editing and co-authoring
+- [anthropics/pptx](https://officialskills.sh/anthropics/skills/pptx) - Create, edit, and analyze PowerPoint presentations
+- [anthropics/xlsx](https://officialskills.sh/anthropics/skills/xlsx) - Create, edit, and analyze Excel spreadsheets
+- [anthropics/pdf](https://officialskills.sh/anthropics/skills/pdf) - Extract text, create PDFs, and handle forms
+- [anthropics/algorithmic-art](https://officialskills.sh/anthropics/skills/algorithmic-art) - Create generative art using p5.js with seeded randomness
+- [anthropics/canvas-design](https://officialskills.sh/anthropics/skills/canvas-design) - Design visual art in PNG and PDF formats
+- [anthropics/frontend-design](https://officialskills.sh/anthropics/skills/frontend-design) - Frontend design and UI/UX development tools
+- [anthropics/slack-gif-creator](https://officialskills.sh/anthropics/skills/slack-gif-creator) - Create animated GIFs optimized for Slack size constraints
+- [anthropics/theme-factory](https://officialskills.sh/anthropics/skills/theme-factory) - Style artifacts with professional themes or generate custom themes
+- [anthropics/web-artifacts-builder](https://officialskills.sh/anthropics/skills/web-artifacts-builder) - Build complex claude.ai HTML artifacts with React and Tailwind
+- [anthropics/mcp-builder](https://officialskills.sh/anthropics/skills/mcp-builder) - Create MCP servers to integrate external APIs and services
+- [anthropics/webapp-testing](https://officialskills.sh/anthropics/skills/webapp-testing) - Test local web applications using Playwright
+- [anthropics/brand-guidelines](https://officialskills.sh/anthropics/skills/brand-guidelines) - Apply Anthropic's brand colors and typography to artifacts
+- [anthropics/internal-comms](https://officialskills.sh/anthropics/skills/internal-comms) - Write status reports, newsletters, and FAQs
+- [anthropics/skill-creator](https://officialskills.sh/anthropics/skills/skill-creator) - Guide for creating skills that extend Claude's capabilities
+- [anthropics/template](https://officialskills.sh/anthropics/skills/template) - Basic template for creating new skills
 
 #### Skills by OpenAI (Codex)
-
-Codex supports skills at different scopes from [openai/skills](https://github.com/openai/skills):
-
-| Scope | Location | Use |
-|-------|----------|-----|
-| REPO | `$CWD/.codex/skills` | Skills for a working folder |
-| REPO | `$REPO_ROOT/.codex/skills` | Root skills for everyone using the repo |
-| USER | `~/.codex/skills` | Personal skills across any repository |
-| ADMIN | `/etc/codex/skills` | Default admin skills |
-| SYSTEM | Bundled with Codex | Built-ins like `skill-creator` and `plan` |
+Official curated skills from OpenAI's catalog.
+- [openai/cloudflare-deploy](https://officialskills.sh/openai/skills/cloudflare-deploy) - Deploy apps to Cloudflare using Workers and Pages
+- [openai/develop-web-game](https://officialskills.sh/openai/skills/develop-web-game) - Build and test web games iteratively using Playwright
+- [openai/doc](https://officialskills.sh/openai/skills/doc) - Read, create, and edit .docx documents with formatting
+- [openai/gh-address-comments](https://officialskills.sh/openai/skills/gh-address-comments) - Address review and issue comments on open GitHub PRs via CLI
+- [openai/gh-fix-ci](https://officialskills.sh/openai/skills/gh-fix-ci) - Debug and fix failing GitHub Actions PR checks
+- [openai/imagegen](https://officialskills.sh/openai/skills/imagegen) - Generate and edit images using OpenAI's Image API
+- [openai/jupyter-notebook](https://officialskills.sh/openai/skills/jupyter-notebook) - Create clean, reproducible Jupyter notebooks
+- [openai/linear](https://officialskills.sh/openai/skills/linear) - Manage issues, projects, and team workflows in Linear
+- [openai/netlify-deploy](https://officialskills.sh/openai/skills/netlify-deploy) - Automate Netlify deployments with CLI support
+- [openai/notion-knowledge-capture](https://officialskills.sh/openai/skills/notion-knowledge-capture) - Convert conversations into structured Notion wiki entries
+- [openai/pdf](https://officialskills.sh/openai/skills/pdf) - Read, create, and review PDFs with layout integrity
+- [openai/playwright](https://officialskills.sh/openai/skills/playwright) - Automate real browser interactions for navigation and forms
+- [openai/sora](https://officialskills.sh/openai/skills/sora) - Generate, remix, and manage short video clips via Sora API
+- [openai/speech](https://officialskills.sh/openai/skills/speech) - Generate spoken audio from text using OpenAI's API
+- [openai/spreadsheet](https://officialskills.sh/openai/skills/spreadsheet) - Create, edit, analyze, and visualize spreadsheets
+- [openai/figma](https://officialskills.sh/openai/skills/figma) - Use the Figma MCP server to fetch design context
+- [openai/figma-implement-design](https://officialskills.sh/openai/skills/figma-implement-design) - Translate Figma designs into production-ready code
+- [openai/frontend-skill](https://officialskills.sh/openai/skills/frontend-skill) - Create visually strong landing pages and web apps
 
 #### Skills by Google Gemini
-
-Install from [google-gemini/gemini-skills](https://github.com/google-gemini/gemini-skills).
-
-| Skill | Description |
-|-------|-------------|
-| [gemini-api-dev](https://github.com/google-gemini/gemini-skills/tree/main/gemini-api-dev) | Best practices for developing Gemini-powered apps |
-| [vertex-ai-api-dev](https://github.com/google-gemini/gemini-skills/tree/main/vertex-ai-api-dev) | Developing Gemini-powered apps on Google Cloud Vertex AI |
-| [gemini-live-api-dev](https://github.com/google-gemini/gemini-skills/tree/main/gemini-live-api-dev) | Building real-time bidirectional streaming apps with the Gemini Live API |
-| [gemini-interactions-api](https://github.com/google-gemini/gemini-skills/tree/main/gemini-interactions-api) | Building apps with the Gemini Interactions API |
+Install via [google-gemini/gemini-api-dev](https://officialskills.sh/google-gemini/skills/gemini-api-dev).
+- [google-gemini/gemini-api-dev](https://officialskills.sh/google-gemini/skills/gemini-api-dev) - Best practices for developing Gemini-powered apps
+- [google-gemini/vertex-ai-api-dev](https://officialskills.sh/google-gemini/skills/vertex-ai-api-dev) - Developing Gemini apps on Google Cloud Vertex AI
+- [google-gemini/gemini-live-api-dev](https://officialskills.sh/google-gemini/skills/gemini-live-api-dev) - Building real-time bidirectional streaming apps
+- [google-gemini/gemini-interactions-api](https://officialskills.sh/google-gemini/skills/gemini-interactions-api) - Text, chat, streaming, and image generation
 
 #### Skills by Hugging Face
-
-Install from [huggingface/skills](https://github.com/huggingface/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [hf-cli](https://github.com/huggingface/skills/tree/main/hf-cli) | HF CLI tool for Hub operations |
-| [hf-dataset-creator](https://github.com/huggingface/skills/tree/main/hf-dataset-creator) | Create structured training datasets |
-| [hf-model-evaluation](https://github.com/huggingface/skills/tree/main/hf-model-evaluation) | Orchestrate evaluation jobs and generate reports |
-| [hf-llm-trainer](https://github.com/huggingface/skills/tree/main/hf-llm-trainer) | Train models with TRL: SFT, DPO, GRPO, GGUF conversion |
-| [hf-paper-publisher](https://github.com/huggingface/skills/tree/main/hf-paper-publisher) | Publish and manage research papers on Hugging Face Hub |
+Official skills for ML workflows.
+- [huggingface/hf-cli](https://officialskills.sh/huggingface/skills/hf-cli) - HF CLI tool for Hub operations
+- [huggingface/hugging-face-datasets](https://officialskills.sh/huggingface/skills/hugging-face-datasets) - Create and manage datasets with SQL querying
+- [huggingface/hugging-face-model-trainer](https://officialskills.sh/huggingface/skills/hugging-face-model-trainer) - Train models with TRL: SFT, DPO, GRPO
+- [huggingface/transformers.js](https://officialskills.sh/huggingface/skills/transformers.js) - Run ML models in the browser with Transformers.js
 
 #### Skills by Replicate
-
-Install from [replicate/skills](https://github.com/replicate/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [replicate](https://github.com/replicate/skills) | Discover, compare, and run AI models using Replicate's API |
+- [replicate/replicate](https://officialskills.sh/replicate/skills/replicate) - Discover and run AI models via API
 
 #### Skills by fal.ai
-
-| Skill | Description |
-|-------|-------------|
-| [fal-ai](https://github.com/fal-ai/skills) | Run AI inference, image generation, and video models via fal.ai |
+- [fal-ai-community/fal-generate](https://officialskills.sh/fal-ai-community/skills/fal-generate) - Generate images and videos using fal.ai
+- [fal-ai-community/fal-realtime](https://officialskills.sh/fal-ai-community/skills/fal-realtime) - Real-time and streaming AI image generation
+- [fal-ai-community/fal-upscale](https://officialskills.sh/fal-ai-community/skills/fal-upscale) - Upscale and enhance image resolution
 
 #### Skills by MiniMax
-
-| Skill | Description |
-|-------|-------------|
-| [minimax-skills](https://github.com/MiniMax-AI/skills) | MiniMax model API usage, video generation, and multimodal integration |
-
----
-
+- [MiniMax-AI/frontend-dev](https://officialskills.sh/MiniMax-AI/skills/frontend-dev) - Frontend with animations and AI media via MiniMax
+- [MiniMax-AI/minimax-pdf](https://officialskills.sh/MiniMax-AI/skills/minimax-pdf) - Generate, fill, and reformat PDFs
 ### Cloud & Infrastructure
 
 #### Skills by Cloudflare
-
-Install from [cloudflare/skills](https://github.com/cloudflare/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [agents-sdk](https://github.com/cloudflare/skills/tree/main/agents-sdk) | Build stateful AI agents with scheduling, RPC, and MCP servers |
-| [building-ai-agent-on-cloudflare](https://github.com/cloudflare/skills/tree/main/building-ai-agent-on-cloudflare) | Build AI agents with state and WebSockets on Cloudflare |
-| [building-mcp-server-on-cloudflare](https://github.com/cloudflare/skills/tree/main/building-mcp-server-on-cloudflare) | Build remote MCP servers with tools and OAuth |
-| [durable-objects](https://github.com/cloudflare/skills/tree/main/durable-objects) | Stateful coordination with RPC, SQLite, and WebSockets |
-| [wrangler](https://github.com/cloudflare/skills/tree/main/wrangler) | Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows |
+- [cloudflare/agents-sdk](https://officialskills.sh/cloudflare/skills/agents-sdk) - Build stateful AI agents with scheduling, RPC, and MCP servers
+- [cloudflare/building-ai-agent-on-cloudflare](https://officialskills.sh/cloudflare/skills/building-ai-agent-on-cloudflare) - Build AI agents with state and WebSockets on Cloudflare
+- [cloudflare/building-mcp-server-on-cloudflare](https://officialskills.sh/cloudflare/skills/building-mcp-server-on-cloudflare) - Build remote MCP servers with tools and OAuth
+- [cloudflare/durable-objects](https://officialskills.sh/cloudflare/skills/durable-objects) - Stateful coordination with RPC, SQLite, and WebSockets
+- [cloudflare/web-perf](https://officialskills.sh/cloudflare/skills/web-perf) - Audit Core Web Vitals and render-blocking resources
+- [cloudflare/wrangler](https://officialskills.sh/cloudflare/skills/wrangler) - Deploy and manage Workers, KV, R2, D1, Vectorize, Queues, Workflows
 
 #### Skills by Netlify
-
-| Skill | Description |
-|-------|-------------|
-| [netlify-functions](https://github.com/netlify/skills/tree/main/netlify-functions) | Build serverless API endpoints and background tasks |
-| [netlify-edge-functions](https://github.com/netlify/skills/tree/main/netlify-edge-functions) | Low-latency edge middleware and geolocation logic |
-| [netlify-db](https://github.com/netlify/skills/tree/main/netlify-db) | Managed Postgres with deploy preview branching |
-| [netlify-ai-gateway](https://github.com/netlify/skills/tree/main/netlify-ai-gateway) | Access AI models via unified gateway endpoint |
-| [netlify-cli-and-deploy](https://github.com/netlify/skills/tree/main/netlify-cli-and-deploy) | CLI setup, local dev, and deployment workflows |
+- [netlify/netlify-functions](https://officialskills.sh/netlify/skills/netlify-functions) - Build serverless API endpoints and background tasks
+- [netlify/netlify-edge-functions](https://officialskills.sh/netlify/skills/netlify-edge-functions) - Low-latency edge middleware and geolocation logic
+- [netlify/netlify-blobs](https://officialskills.sh/netlify/skills/netlify-blobs) - Key-value object storage for files and data
+- [netlify/netlify-db](https://officialskills.sh/netlify/skills/netlify-db) - Managed Postgres with deploy preview branching
+- [netlify/netlify-deploy](https://officialskills.sh/netlify/skills/netlify-deploy) - Automated deployment workflow for Netlify sites
+- [netlify/netlify-ai-gateway](https://officialskills.sh/netlify/skills/netlify-ai-gateway) - Access AI models via unified gateway endpoint
 
 #### Skills by Vercel
-
-Install from [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills).
-
-| Skill | Description |
-|-------|-------------|
-| [react-best-practices](https://github.com/vercel-labs/agent-skills/tree/main/react-best-practices) | React best practices and patterns |
-| [web-design-guidelines](https://github.com/vercel-labs/agent-skills/tree/main/web-design-guidelines) | Web design guidelines and standards |
-| [next-best-practices](https://github.com/vercel-labs/agent-skills/tree/main/next-best-practices) | Next.js best practices and recommended patterns |
-| [next-cache-components](https://github.com/vercel-labs/agent-skills/tree/main/next-cache-components) | Caching strategies and cache-aware components in Next.js |
-| [next-upgrade](https://github.com/vercel-labs/agent-skills/tree/main/next-upgrade) | Upgrade Next.js projects to newer versions |
+- [vercel-labs/react-best-practices](https://officialskills.sh/vercel-labs/skills/react-best-practices) - React best practices and patterns
+- [vercel-labs/web-design-guidelines](https://officialskills.sh/vercel-labs/skills/web-design-guidelines) - Web design guidelines and standards
+- [vercel-labs/next-best-practices](https://officialskills.sh/vercel-labs/skills/next-best-practices) - Next.js best practices and recommended patterns
+- [vercel-labs/next-cache-components](https://officialskills.sh/vercel-labs/skills/next-cache-components) - Caching strategies and cache-aware components in Next.js
+- [vercel-labs/react-native-skills](https://officialskills.sh/vercel-labs/skills/react-native-skills) - React Native best practices and performance guidelines
 
 #### Skills by HashiCorp (Terraform)
-
-Install from [hashicorp/agent-skills](https://github.com/hashicorp/agent-skills).
-
-| Skill | Description |
-|-------|-------------|
-| [new-terraform-provider](https://github.com/hashicorp/agent-skills/tree/main/new-terraform-provider) | Scaffold a new Terraform provider project |
-| [provider-resources](https://github.com/hashicorp/agent-skills/tree/main/provider-resources) | Implement Terraform Provider resources and data sources |
-| [provider-test-patterns](https://github.com/hashicorp/agent-skills/tree/main/provider-test-patterns) | Acceptance test patterns for Terraform providers |
-| [refactor-module](https://github.com/hashicorp/agent-skills/tree/main/refactor-module) | Transform monolithic Terraform configurations into reusable modules |
-| [terraform-style-guide](https://github.com/hashicorp/agent-skills/tree/main/terraform-style-guide) | Generate Terraform HCL following HashiCorp style conventions |
+- [hashicorp/new-terraform-provider](https://officialskills.sh/hashicorp/skills/new-terraform-provider) - Scaffold a new Terraform provider project using the Plugin Framework
+- [hashicorp/provider-resources](https://officialskills.sh/hashicorp/skills/provider-resources) - Implement Terraform Provider resources and data sources
+- [hashicorp/provider-test-patterns](https://officialskills.sh/hashicorp/skills/provider-test-patterns) - Acceptance test patterns for Terraform providers
+- [hashicorp/refactor-module](https://officialskills.sh/hashicorp/skills/refactor-module) - Transform monolithic Terraform configurations into reusable modules
+- [hashicorp/terraform-style-guide](https://officialskills.sh/hashicorp/skills/terraform-style-guide) - Generate Terraform HCL code following HashiCorp's official style conventions
+- [hashicorp/terraform-stacks](https://officialskills.sh/hashicorp/skills/terraform-stacks) - Manage infrastructure across multiple environments, regions, and cloud accounts
 
 #### Skills by Neon
-
-Install from [neondatabase/skills](https://github.com/neondatabase/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [neon-postgres](https://github.com/neondatabase/skills/tree/main/neon-postgres) | Best practices for Neon Serverless Postgres |
-| [claimable-postgres](https://github.com/neondatabase/skills/tree/main/claimable-postgres) | Claimable Postgres database provisioning with Neon |
+- [neondatabase/neon-postgres](https://officialskills.sh/neondatabase/skills/neon-postgres) - Best practices for Neon Serverless Postgres
+- [neondatabase/claimable-postgres](https://officialskills.sh/neondatabase/skills/claimable-postgres) - Claimable Postgres database provisioning with Neon
+- [neondatabase/neon-postgres-egress-optimizer](https://officialskills.sh/neondatabase/skills/neon-postgres-egress-optimizer) - Optimize Neon Postgres egress and data transfer
 
 #### Skill by ClickHouse
-
-Install from [ClickHouse/agent-skills](https://github.com/ClickHouse/agent-skills).
-
-| Skill | Description |
-|-------|-------------|
-| [clickhouse-best-practices](https://github.com/ClickHouse/agent-skills/tree/main/clickhouse-best-practices) | Best practices for working with ClickHouse |
+- [clickhouse/clickhouse-best-practices](https://officialskills.sh/clickhouse/skills/clickhouse-best-practices) - Best practices for working with ClickHouse
 
 #### Skills by Supabase
-
-Install from [supabase/agent-skills](https://github.com/supabase/agent-skills).
-
-| Skill | Description |
-|-------|-------------|
-| [postgres-best-practices](https://github.com/supabase/agent-skills/tree/main/postgres-best-practices) | PostgreSQL best practices for Supabase |
+- [supabase/postgres-best-practices](https://officialskills.sh/supabase/skills/postgres-best-practices) - PostgreSQL best practices for Supabase
 
 #### Skills by Tinybird
-
-| Skill | Description |
-|-------|-------------|
-| [tinybird-best-practices](https://github.com/tinybirdco/skills/tree/main/tinybird-best-practices) | Tinybird project guidelines for datasources, pipes, endpoints, and SQL |
-| [tinybird-cli-guidelines](https://github.com/tinybirdco/skills/tree/main/tinybird-cli-guidelines) | Tinybird CLI usage guidelines and commands |
-| [tinybird-python-sdk-guidelines](https://github.com/tinybirdco/skills/tree/main/tinybird-python-sdk-guidelines) | Tinybird Python SDK usage guidelines |
-| [tinybird-typescript-sdk-guidelines](https://github.com/tinybirdco/skills/tree/main/tinybird-typescript-sdk-guidelines) | Tinybird TypeScript SDK usage guidelines |
+- [tinybirdco/tinybird-best-practices](https://officialskills.sh/tinybirdco/skills/tinybird-best-practices) - Tinybird project guidelines for datasources, pipes, endpoints, and SQL
+- [tinybirdco/tinybird-cli-guidelines](https://officialskills.sh/tinybirdco/skills/tinybird-cli-guidelines) - Tinybird CLI usage guidelines and commands
+- [tinybirdco/tinybird-typescript-sdk-guidelines](https://officialskills.sh/tinybirdco/skills/tinybird-typescript-sdk-guidelines) - Tinybird TypeScript SDK usage guidelines
 
 ---
 
 ### Developer Tools & Frameworks
 
 #### Skills by VoltAgent
-
-Official skills for building AI agents with the VoltAgent TypeScript framework. Install from [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills).
-
-| Skill | Description |
-|-------|-------------|
-| [create-voltagent](https://github.com/VoltAgent/awesome-agent-skills/tree/main/.claude/skills/create-voltagent) | Project setup guide with CLI and manual steps |
-| [voltagent-best-practices](https://github.com/VoltAgent/awesome-agent-skills/tree/main/.claude/skills/voltagent-best-practices) | Architecture and usage patterns for agents, workflows, memory, and servers |
-| [voltagent-core-reference](https://github.com/VoltAgent/awesome-agent-skills/tree/main/.claude/skills/voltagent-core-reference) | Reference for the VoltAgent class options and lifecycle methods |
-| [voltagent-docs-bundle](https://github.com/VoltAgent/awesome-agent-skills/tree/main/.claude/skills/voltagent-docs-bundle) | Version-matched embedded docs from @voltagent/core |
+- [voltagent/create-voltagent](https://officialskills.sh/voltagent/skills/create-voltagent) - Project setup guide with CLI and manual steps
+- [voltagent/voltagent-best-practices](https://officialskills.sh/voltagent/skills/voltagent-best-practices) - Architecture and usage patterns for agents, workflows, memory, and servers
+- [voltagent/voltagent-core-reference](https://officialskills.sh/voltagent/skills/voltagent-core-reference) - Reference for the VoltAgent class options and lifecycle methods
+- [voltagent/voltagent-docs-bundle](https://officialskills.sh/voltagent/skills/voltagent-docs-bundle) - Lookup embedded docs from @voltagent/core for version-matched documentation
 
 #### Skills by CallStack
-
-| Skill | Description |
-|-------|-------------|
-| [react-native-best-practices](https://github.com/callstackincubator/skills/tree/main/react-native-best-practices) | Performance optimization for React Native apps |
-| [github](https://github.com/callstackincubator/skills/tree/main/github) | GitHub workflow patterns for PRs, code review, branching |
-| [upgrading-react-native](https://github.com/callstackincubator/skills/tree/main/upgrading-react-native) | React Native upgrade workflow: templates, dependencies, and pitfalls |
+- [callstackincubator/react-native-best-practices](https://officialskills.sh/callstackincubator/skills/react-native-best-practices) - Performance optimization for React Native apps
+- [callstackincubator/github](https://officialskills.sh/callstackincubator/skills/github) - GitHub workflow patterns for PRs, code review, branching
+- [callstackincubator/upgrading-react-native](https://officialskills.sh/callstackincubator/skills/upgrading-react-native) - React Native upgrade workflow: templates, dependencies, and pitfalls
 
 #### Skills by Expo
-
-Install from [expo/skills](https://github.com/expo/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [building-native-ui](https://github.com/expo/skills/tree/main/building-native-ui) | Build apps with Expo Router, styling, components, navigation, and animations |
-| [expo-api-routes](https://github.com/expo/skills/tree/main/expo-api-routes) | Create API routes in Expo Router with EAS Hosting |
-| [expo-deployment](https://github.com/expo/skills/tree/main/expo-deployment) | Deploy Expo apps to production |
-| [expo-tailwind-setup](https://github.com/expo/skills/tree/main/expo-tailwind-setup) | Set up Tailwind CSS v4 in Expo with NativeWind v5 |
-| [upgrading-expo](https://github.com/expo/skills/tree/main/upgrading-expo) | Upgrade Expo SDK versions |
+- [expo/building-native-ui](https://officialskills.sh/expo/skills/building-native-ui) - Build apps with Expo Router, styling, components, and animations
+- [expo/expo-api-routes](https://officialskills.sh/expo/skills/expo-api-routes) - Create API routes in Expo Router with EAS Hosting
+- [expo/expo-deployment](https://officialskills.sh/expo/skills/expo-deployment) - Deploy Expo apps to production
+- [expo/upgrading-expo](https://officialskills.sh/expo/skills/upgrading-expo) - Upgrade Expo SDK versions
+- [expo/use-dom](https://officialskills.sh/expo/skills/use-dom) - Run web code in a webview on native using DOM components
 
 #### Skills by Remotion
-
-Install from [remotion-dev/skills](https://github.com/remotion-dev/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [remotion](https://github.com/remotion-dev/skills) | Programmatic video creation with React |
-
-#### Skills by GSAP
-
-| Skill | Description |
-|-------|-------------|
-| [gsap-skills](https://github.com/greensock/gsap-skills) | GSAP animation libraries, ScrollTrigger, and timeline management |
+- [remotion-dev/remotion](https://officialskills.sh/remotion-dev/skills/remotion) - Programmatic video creation with React
 
 #### Skills by DuckDB
+- [duckdb/attach-db](https://officialskills.sh/duckdb/skills/attach-db) - Attach a DuckDB database file for interactive querying
+- [duckdb/query](https://officialskills.sh/duckdb/skills/query) - Run SQL queries against attached databases or ad-hoc files
+- [duckdb/duckdb-docs](https://officialskills.sh/duckdb/skills/duckdb-docs) - Search DuckDB and DuckLake documentation
 
-| Skill | Description |
-|-------|-------------|
-| [duckdb-skills](https://github.com/duckdb/skills) | DuckDB SQL patterns, in-process analytics, and Parquet file handling |
+#### Skills by GSAP (GreenSock)
+- [greensock/gsap-core](https://officialskills.sh/greensock/skills/gsap-core) - Core API: gsap.to(), from(), fromTo(), easing, duration, stagger
+- [greensock/gsap-scrolltrigger](https://officialskills.sh/greensock/skills/gsap-scrolltrigger) - ScrollTrigger for scroll-linked animations and pinning
+- [greensock/gsap-react](https://officialskills.sh/greensock/skills/gsap-react) - React integration with useGSAP hook and SSR patterns
 
 #### Skills by WordPress
-
-Install from [WordPress/agent-skills](https://github.com/WordPress/agent-skills).
-
-| Skill | Description |
-|-------|-------------|
-| [agent-skills](https://github.com/WordPress/agent-skills) | WordPress development, block editor, and plugin authoring skills |
+- [WordPress/wp-block-development](https://officialskills.sh/WordPress/skills/wp-block-development) - Gutenberg blocks: block.json, attributes, rendering
+- [WordPress/wp-plugin-development](https://officialskills.sh/WordPress/skills/wp-plugin-development) - Plugin architecture, hooks, settings API, security
+- [WordPress/wp-playground](https://officialskills.sh/WordPress/skills/wp-playground) - WordPress Playground for instant local environments
 
 #### Skills by Figma
-
-| Skill | Description |
-|-------|-------------|
-| [figma](https://github.com/figma/skills) | Design token extraction, component documentation, and Dev Mode workflows |
+- [figma/figma-implement-design](https://officialskills.sh/figma/skills/figma-implement-design) - Translate Figma designs into production-ready code with 1:1 fidelity
+- [figma/figma-generate-library](https://officialskills.sh/figma/skills/figma-generate-library) - Build or update a design system library in Figma from a codebase
+- [figma/figma-use](https://officialskills.sh/figma/skills/figma-use) - Run Figma Plugin API scripts for canvas writes and inspections
 
 ---
 
 ### Google Ecosystem
 
 #### Skills by Google Labs (Stitch)
-
-Agent Skills for the Stitch MCP server, compatible with Claude Code, Gemini CLI, Cursor, and more. Install from [google-labs-code/skills](https://github.com/google-labs-code/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [design-md](https://github.com/google-labs-code/skills/tree/main/design-md) | Create and manage DESIGN.md files |
-| [enhance-prompt](https://github.com/google-labs-code/skills/tree/main/enhance-prompt) | Improve prompts with design specs and UI/UX vocabulary |
-| [react-components](https://github.com/google-labs-code/skills/tree/main/react-components) | Stitch to React components conversion |
-| [shadcn-ui](https://github.com/google-labs-code/skills/tree/main/shadcn-ui) | Build UI components with shadcn/ui |
-| [stitch-loop](https://github.com/google-labs-code/skills/tree/main/stitch-loop) | Iterative design-to-code feedback loop |
+- [google-labs-code/design-md](https://officialskills.sh/google-labs-code/skills/design-md) - Create and manage DESIGN.md files
+- [google-labs-code/enhance-prompt](https://officialskills.sh/google-labs-code/skills/enhance-prompt) - Improve prompts with design specs and UI/UX vocabulary
+- [google-labs-code/react-components](https://officialskills.sh/google-labs-code/skills/react-components) - Stitch to React components conversion
+- [google-labs-code/shadcn-ui](https://officialskills.sh/google-labs-code/skills/shadcn-ui) - Build UI components with shadcn/ui
+- [google-labs-code/stitch-loop](https://officialskills.sh/google-labs-code/skills/stitch-loop) - Iterative design-to-code feedback loop
 
 #### Skills by Google Workspace CLI
-
-Official Google Workspace CLI skills for managing Google Workspace services via the `gws` CLI tool. Install from [googleworkspace/skills](https://github.com/googleworkspace/skills).
-
-| Skill | Description |
-|-------|-------------|
-| [gws-drive](https://github.com/googleworkspace/skills/tree/main/gws-drive) | Manage Google Drive files, folders, and shared drives |
-| [gws-sheets](https://github.com/googleworkspace/skills/tree/main/gws-sheets) | Read and write Google Sheets spreadsheets |
-| [gws-gmail](https://github.com/googleworkspace/skills/tree/main/gws-gmail) | Send, read, and manage Gmail email |
-| [gws-calendar](https://github.com/googleworkspace/skills/tree/main/gws-calendar) | Manage Google Calendar calendars and events |
-| [gws-docs](https://github.com/googleworkspace/skills/tree/main/gws-docs) | Read and write Google Docs documents |
-| [gws-chat](https://github.com/googleworkspace/skills/tree/main/gws-chat) | Manage Google Chat spaces and messages |
-| [gws-workflow](https://github.com/googleworkspace/skills/tree/main/gws-workflow) | Cross-service Google Workspace productivity workflows |
+- [googleworkspace/gws-drive](https://officialskills.sh/googleworkspace/skills/gws-drive) - Manage Google Drive files, folders, and shared drives
+- [googleworkspace/gws-sheets](https://officialskills.sh/googleworkspace/skills/gws-sheets) - Read and write Google Sheets spreadsheets
+- [googleworkspace/gws-gmail](https://officialskills.sh/googleworkspace/skills/gws-gmail) - Send, read, and manage Gmail email
+- [googleworkspace/gws-calendar](https://officialskills.sh/googleworkspace/skills/gws-calendar) - Manage Google Calendar calendars and events
+- [googleworkspace/gws-workflow](https://officialskills.sh/googleworkspace/skills/gws-workflow) - Cross-service Google Workspace productivity workflows
 
 ---
 
 ### Business, Productivity & Marketing
 
 #### Skills by Stripe
-
-Install from [stripe/ai](https://github.com/stripe/ai).
-
-| Skill | Description |
-|-------|-------------|
-| [stripe-best-practices](https://github.com/stripe/ai/tree/main/stripe-best-practices) | Best practices for building Stripe integrations |
-| [upgrade-stripe](https://github.com/stripe/ai/tree/main/upgrade-stripe) | Upgrade Stripe SDK and API versions |
+- [stripe/stripe-best-practices](https://officialskills.sh/stripe/skills/stripe-best-practices) - Best practices for building Stripe integrations
+- [stripe/upgrade-stripe](https://officialskills.sh/stripe/skills/upgrade-stripe) - Upgrade Stripe SDK and API versions
 
 #### Skills by Courier
-
-| Skill | Description |
-|-------|-------------|
-| [courier-skills](https://github.com/trycourier/courier-skills) | Multi-channel notifications via email, SMS, push, and chat |
+- [trycourier/courier-skills](https://github.com/trycourier/courier-skills) - Multi-channel notifications via email, SMS, push, and chat
 
 #### Skills by Typefully
-
-| Skill | Description |
-|-------|-------------|
-| [typefully](https://github.com/typefully/skills) | Create, schedule, and publish social media content across X, LinkedIn, Threads, Bluesky, and Mastodon |
+- [typefully/typefully](https://officialskills.sh/typefully/skills/typefully) - Create, schedule, and publish social media content
 
 #### Skills by Composio
-
-| Skill | Description |
-|-------|-------------|
-| [composio](https://github.com/composiohq/composio/tree/main/skills) | Connect AI agents to 1000+ external apps with managed authentication |
+- [composiohq/composio](https://officialskills.sh/composiohq/skills/composio) - Connect AI agents to 1000+ external apps with managed authentication
 
 #### Skills by Notion
-
-| Skill | Description |
-|-------|-------------|
-| [skills](https://github.com/makenotion/skills) | Notion API integration, database operations, and content management |
+- [makenotion/knowledge-capture](https://officialskills.sh/makenotion/skills/knowledge-capture) - Transform conversations into structured Notion documentation
+- [makenotion/meeting-intelligence](https://officialskills.sh/makenotion/skills/meeting-intelligence) - Prepare meeting materials by gathering Notion context
+- [makenotion/spec-to-implementation](https://officialskills.sh/makenotion/skills/spec-to-implementation) - Turn tech specs into concrete Notion tasks
 
 #### Skills by Resend
+- [resend/resend](https://github.com/resend/resend-skills/tree/main/skills/resend) - Send and manage emails via the Resend API
+- [resend/react-email](https://github.com/resend/resend-skills/tree/main/skills/react-email) - Build emails with React Email components
+- [resend/email-best-practices](https://github.com/resend/resend-skills/tree/main/skills/email-best-practices) - Email deliverability and design best practices
 
-| Skill | Description |
-|-------|-------------|
-| [resend-skills](https://github.com/resend/skills) | Transactional email sending, templates, and domain configuration |
+#### Skills by Sanity
+- [sanity-io/sanity-best-practices](https://officialskills.sh/sanity-io/skills/sanity-best-practices) - Best practices for Sanity Studio and content workflows
+- [sanity-io/content-modeling-best-practices](https://officialskills.sh/sanity-io/skills/content-modeling-best-practices) - Guidelines for designing scalable content models in Sanity
+- [sanity-io/seo-aeo-best-practices](https://officialskills.sh/sanity-io/skills/seo-aeo-best-practices) - SEO and answer engine optimization patterns
+
+#### Skills by Better Auth
+- [better-auth/best-practices](https://officialskills.sh/better-auth/skills/best-practices) - Best practices for Better Auth integration
+- [better-auth/create-auth](https://officialskills.sh/better-auth/skills/create-auth) - Create authentication setup with Better Auth
+- [better-auth/twoFactor](https://officialskills.sh/better-auth/skills/twoFactor) - Two-factor authentication with Better Auth
+
+<details>
+<summary><strong>Marketing Skills by Corey Haines</strong></summary>
+
+Comprehensive SaaS marketing stack skills by [Corey Haines](https://github.com/coreyhaines31).
+- [coreyhaines31/ai-seo](https://github.com/coreyhaines31/marketingskills/tree/main/skills/ai-seo) - Optimize content for AI-generated answers
+- [coreyhaines31/copywriting](https://github.com/coreyhaines31/marketingskills/tree/main/skills/copywriting) - Write marketing copy for landing pages and ads
+- [coreyhaines31/email-sequence](https://github.com/coreyhaines31/marketingskills/tree/main/skills/email-sequence) - Build email sequences and drip campaigns
+- [coreyhaines31/page-cro](https://github.com/coreyhaines31/marketingskills/tree/main/skills/page-cro) - Improve conversion rates on marketing pages
+- [coreyhaines31/pricing-strategy](https://github.com/coreyhaines31/marketingskills/tree/main/skills/pricing-strategy) - Define pricing and packaging for SaaS
+- [coreyhaines31/social-content](https://github.com/coreyhaines31/marketingskills/tree/main/skills/social-content) - Create and schedule social media content
+</details>
+
+<details>
+<summary><strong>Product Manager Skills by Dean Peters</strong></summary>
+
+46 battle-tested PM skills by [Dean Peters](https://github.com/deanpeters).
+- [deanpeters/epic-hypothesis](https://github.com/deanpeters/Product-Manager-Skills/tree/main/skills/epic-hypothesis) - Turn initiatives into testable hypotheses
+- [deanpeters/opportunity-solution-tree](https://github.com/deanpeters/Product-Manager-Skills/tree/main/skills/opportunity-solution-tree) - Generate solution trees based on Teresa Torres' method
+- [deanpeters/prd-development](https://github.com/deanpeters/Product-Manager-Skills/tree/main/skills/prd-development) - Structured PRD process: problem to metrics
+- [deanpeters/roadmap-planning](https://github.com/deanpeters/Product-Manager-Skills/tree/main/skills/roadmap-planning) - Strategic roadmap process and communication
+</details>
+
+<details>
+<summary><strong>Product Management Skills by Pawel Huryn</strong></summary>
+
+65 PM skills by [Paweł Huryn](https://github.com/phuryn), creator of The Product Compass.
+- [phuryn/create-prd](https://github.com/phuryn/pm-skills/tree/main/pm-execution/skills/create-prd) - Create a PRD with 8-section template
+- [phuryn/product-strategy](https://github.com/phuryn/pm-skills/tree/main/pm-product-strategy/skills/product-strategy) - Create product strategy using the Canvas
+- [phuryn/user-personas](https://github.com/phuryn/pm-skills/tree/main/pm-market-research/skills/user-personas) - Create user personas with JTBD, pains, and gains
+- [phuryn/market-sizing](https://github.com/phuryn/pm-skills/tree/main/pm-market-research/skills/market-sizing) - Estimate TAM, SAM, SOM with top-down and bottom-up
+</details>
+
+<details>
+<summary><strong>Skills by Garry Tan (gstack)</strong></summary>
+
+28 engineering leadership skills by [Garry Tan](https://github.com/garrytan).
+- [garrytan/office-hours](https://officialskills.sh/garrytan/skills/office-hours) - YC Office Hours: reframing product before code
+- [garrytan/plan-ceo-review](https://officialskills.sh/garrytan/skills/plan-ceo-review) - CEO/Founder plan review modes
+- [garrytan/design-review](https://officialskills.sh/garrytan/skills/design-review) - Visual audit and atomic fixes with screenshots
+- [garrytan/qa](https://officialskills.sh/garrytan/skills/qa) - QA Lead: find bugs and generate regression tests
+- [garrytan/ship](https://officialskills.sh/garrytan/skills/ship) - Release Engineer: sync, test, audit, and push
+</details>
+
+---
+
+### Security & Web Intelligence
+
+#### Skills by Trail of Bits
+- [trailofbits/audit-context-building](https://officialskills.sh/trailofbits/skills/audit-context-building) - Deep architectural context via granular code analysis
+- [trailofbits/building-secure-contracts](https://officialskills.sh/trailofbits/skills/building-secure-contracts) - Smart contract security toolkit for 6 blockchains
+- [trailofbits/modern-python](https://officialskills.sh/trailofbits/skills/modern-python) - Modern Python tooling with uv, ruff, and pytest
+- [trailofbits/static-analysis](https://officialskills.sh/trailofbits/skills/static-analysis) - Static analysis toolkit with CodeQL and Semgrep
+
+#### Skills by Sentry
+- [getsentry/agents-md](https://officialskills.sh/getsentry/skills/agents-md) - Generate and manage AGENTS.md files
+- [getsentry/code-review](https://officialskills.sh/getsentry/skills/code-review) - Perform structured code reviews
+- [getsentry/find-bugs](https://officialskills.sh/getsentry/skills/find-bugs) - Find and identify bugs in code
+
+#### Skills by Firecrawl
+- [firecrawl/firecrawl-cli](https://officialskills.sh/firecrawl/skills/firecrawl-cli) - Scrape, crawl, search, and map the web via CLI
+- [firecrawl/firecrawl-agent](https://officialskills.sh/firecrawl/skills/firecrawl-agent) - AI agent for autonomous web scraping
+- [firecrawl/firecrawl-browser](https://officialskills.sh/firecrawl/skills/firecrawl-browser) - Browser-based web scraping and interaction
+
+<details>
+<summary><strong>Skills by Microsoft</strong></summary>
+
+133 domain-specific skills for Azure SDK and Microsoft AI Foundry.
+- [microsoft/cloud-solution-architect](https://officialskills.sh/microsoft/skills/cloud-solution-architect) - Design well-architected Azure cloud systems
+- [microsoft/copilot-sdk](https://officialskills.sh/microsoft/skills/copilot-sdk) - Build applications powered by GitHub Copilot SDK
+- [microsoft/azure-ai-openai-dotnet](https://officialskills.sh/microsoft/skills/azure-ai-openai-dotnet) - GPT-4, embeddings, and DALL-E client for .NET
+- [microsoft/azure-ai-projects-python](https://officialskills.sh/microsoft/skills/azure-ai-projects-py) - AI Foundry project client and agents for Python
+- [microsoft/azure-identity-typescript](https://officialskills.sh/microsoft/skills/azure-identity-ts) - Microsoft Entra ID authentication for TypeScript
+</details>
+
+#### Skills by Binance
+- [binance/crypto-market-rank](https://officialskills.sh/binance/skills/crypto-market-rank) - Query crypto market rankings and leaderboards
+- [binance/query-token-audit](https://officialskills.sh/binance/skills/query-token-audit) - Audit token security to detect scams and honeypots
+- [binance/trading-signal](https://officialskills.sh/binance/skills/trading-signal) - Monitor on-chain Smart Money buy/sell signals
 
 #### Skills by Sanity
 
@@ -535,74 +493,47 @@ Install from [microsoft/agent-skills](https://github.com/microsoft/agent-skills)
 
 ## Community Skills
 
-Community-maintained skills and collections (verify before use):
+<details>
+<summary><strong>Vector Databases</strong></summary>
 
-### Skill Collections
+- [qdrant/skills](https://github.com/qdrant/skills) - Agent skills for Qdrant vector search, scaling, and performance
+</details>
 
-| Repository | Description |
-|------------|-------------|
-| [anthropics/skills](https://github.com/anthropics/skills) | Official Anthropic collection (document editing, data analysis) |
-| [openai/skills](https://github.com/openai/skills) | Official OpenAI Codex skills catalog |
-| [huggingface/skills](https://github.com/huggingface/skills) | HuggingFace skills (compatible with Claude, Codex, Gemini) |
-| [skillcreatorai/Ai-Agent-Skills](https://github.com/skillcreatorai/Ai-Agent-Skills) | SkillCreator.ai collection with CLI installer |
-| [agentskill.sh](https://agentskill.sh) | 44k+ skills directory with security scanning and `/learn` installer |
-| [TutuoAI](https://www.tutuoai.com/) | Agent-native marketplace for skills, tools, and workflow blueprints |
-| [karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills) | 50+ verified skills for Claude Code and Claude.ai |
-| [uxuiprinciples/agent-skills](https://github.com/uxuiprinciples/agent-skills) | 5 UX/UI skills: evaluate interfaces against 168 research-backed principles |
-| [dmgrok/agent_skills_directory](https://github.com/dmgrok/agent_skills_directory) | npm-like CLI for skills — aggregates 177+ skills from 24 providers |
-| [gotalab/skillport](https://github.com/gotalab/skillport) | Skills distribution via CLI or MCP |
-| [kukapay/crypto-skills](https://github.com/kukapay/crypto-skills) | Cryptocurrency, web3 and blockchain skills |
-| [browser-act/skills](https://github.com/browser-act/skills) | 22 browser automation skills for structured data extraction |
-| [noizai/skills](https://github.com/noizai/skills) | Voice-first skills: TTS with SRT dubbing and companion voice presets |
+<details>
+<summary><strong>Marketing</strong></summary>
 
-### Development & Code Tools
+- [BrianRWagner/ai-marketing-skills](https://github.com/BrianRWagner/ai-marketing-skills) - 17 marketing frameworks for outreach and audits
+- [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) - Universal SEO skill for website analysis
+- [smixs/creative-director-skill](https://github.com/smixs/creative-director-skill) - 20+ creative methodologies (SIT, TRIZ, SCAMPER)
+- [SHADOWPR0/beautiful_prose](https://github.com/SHADOWPR0/beautiful_prose) - Hard-edged writing style contract for forceful English prose
+</details>
 
-| Skill | Description |
-|-------|-------------|
-| [aws-skills](https://github.com/zxkane/aws-skills) | AWS development with CDK best practices |
-| [D3.js Visualization](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | D3 charts and interactive data visualizations |
-| [Playwright Automation](https://github.com/lackeyjb/playwright-skill) | Browser automation for testing web apps |
-| [iOS Simulator](https://github.com/conorluddy/ios-simulator-skill) | Interact with iOS Simulator for testing |
-| [SwiftUI Skills](https://github.com/ameyalambat128/swiftui-skills) | Apple-authored SwiftUI and platform guidance extracted from Xcode |
-| [rule-porter](https://github.com/nedcodes-ok/rule-porter) | Convert AI IDE rules between Cursor, CLAUDE.md, AGENTS.md, Copilot, and Windsurf |
-| [AppDeploy](https://github.com/AppDeploy-AI/skills) | Deploy apps with full stack and get a live URL back |
-| [Dart/Flutter](https://github.com/Wreos/mobile-app-developer/tree/main/platforms/Flutter/skills) | Community Flutter skills for implementation, testing, and release workflows |
-| [rule-gen](https://github.com/nedcodes-ok/rule-gen) | Generate AI coding rules from your codebase using Google Gemini |
+<details>
+<summary><strong>Productivity and Collaboration</strong></summary>
 
-### Data & Analysis
+- [PSPDFKit-labs/nutrient-agent-skill](https://github.com/PSPDFKit-labs/nutrient-agent-skill) - Document processing: convert, OCR, and redact PII
+- [RoundTable02/tutor-skills](https://github.com/RoundTable02/tutor-skills) - Transform docs or codebases into interactive StudyVaults
+- [hanfang/claude-memory-skill](https://github.com/hanfang/claude-memory-skill) - Hierarchical memory system with filesystem persistence
+- [wrsmith108/linear-claude-skill](https://github.com/wrsmith108/linear-claude-skill) - Manage Linear issues, projects, and teams
+</details>
 
-| Skill | Description |
-|-------|-------------|
-| [CSV Summarizer](https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill) | Analyze CSV files and generate insights with visualizations |
-| [Kaggle Skill](https://github.com/shepsci/kaggle-skill) | Complete Kaggle integration — competition reports, dataset downloads, submissions |
-| [DNA Claude Analysis](https://github.com/shmlkv/dna-claude-analysis) | Personal genome analysis toolkit across 17 categories |
+<details>
+<summary><strong>Development and Testing</strong></summary>
 
-### Integration & Automation
+- [muthuishere/hand-drawn-diagrams](https://github.com/muthuishere/hand-drawn-diagrams) - Generate hand-drawn Excalidraw diagrams from prompt
+- [coderabbitai/skills](https://github.com/coderabbitai/skills) - Code review and PR autofix workflows
+- [massimodeluisa/recursive-decomposition-skill](https://github.com/massimodeluisa/recursive-decomposition-skill) - Handle long-context tasks (100+ files) via decomposition
+- [mcollina/skills](https://github.com/mcollina/skills/tree/main/skills) - Node.js core, Fastify, and TypeScript skills by Matteo Collina
+- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) - High-agency frontend skill to eliminate generic UI slop
+</details>
 
-| Skill | Description |
-|-------|-------------|
-| [Dev Browser](https://github.com/SawyerHood/dev-browser) | Web browser capability for agents |
-| [Agent Manager](https://github.com/fractalmind-ai/agent-manager-skill) | Manage local CLI AI agents via tmux |
-| [Sheets CLI](https://github.com/gmickel/sheets-cli) | Google Sheets CLI automation |
-| [Spotify Skill](https://github.com/fabioc-aloha/spotify-skill) | Spotify API integration |
-| [AgentStore](https://github.com/techgangboss/agentstore) | Open-source plugin marketplace with CLI install |
-| [Transloadit Skills](https://github.com/transloadit/skills) | Media processing: video encoding, image manipulation, OCR |
-| [steel-browser](https://github.com/steel-dev/cli/tree/main/skills/steel-browser) | Session-backed browser automation skill |
+<details>
+<summary><strong>Context Engineering</strong></summary>
 
-### Security & Systems
-
-| Skill | Description |
-|-------|-------------|
-| [computer-forensics](https://github.com/mhattingpete/claude-skills-marketplace) | Digital forensics analysis and investigation |
-| [Agent OS Governance](https://github.com/imran-siddique/agent-os) | Kernel-level governance for AI agents — deterministic policy enforcement |
-
-### Advanced & Research
-
-| Skill | Description |
-|-------|-------------|
-| [Context Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) | Context engineering techniques |
-| [Pomodoro System Skill](https://github.com/jakedahn/pomodoro) | System Skill Pattern — skills that remember and improve |
-| [Mind Cloning](https://github.com/yzfly/Mind-Cloning-Engineering) | Mind cloning with LLM skills |
+- [muratcankoylan/context-compression](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/context-compression) - Compression strategies for long-running sessions
+- [muratcankoylan/memory-systems](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems) - Design short-term and graph-based memory architectures
+- [k-kolomeitsev/data-structure-protocol](https://github.com/k-kolomeitsev/data-structure-protocol) - Graph-based memory for faster context and safer refactors
+</details>
 
 ---
 
@@ -771,36 +702,6 @@ if __name__ == "__main__":
 - [MCP Server Examples](https://github.com/modelcontextprotocol/servers) — Official server implementations
 
 ---
-
-## Additional Vendor Repositories
-
-The following organizations maintain official GitHub repositories with curated `SKILL.md` collections:
-
-| Organization | Repository |
-|-------------|------------|
-| Anthropic | [anthropics/skills](https://github.com/anthropics/skills) |
-| OpenAI | [openai/skills](https://github.com/openai/skills) |
-| Google Gemini | [google-gemini/gemini-skills](https://github.com/google-gemini/gemini-skills) |
-| HuggingFace | [huggingface/skills](https://github.com/huggingface/skills) |
-| Replicate | [replicate/skills](https://github.com/replicate/skills) |
-| ElevenLabs | [elevenlabs/skills](https://github.com/elevenlabs/skills) |
-| Black Forest Labs | [black-forest-labs/skills](https://github.com/black-forest-labs/skills) |
-| Cloudflare | [cloudflare/skills](https://github.com/cloudflare/skills) |
-| HashiCorp | [hashicorp/agent-skills](https://github.com/hashicorp/agent-skills) |
-| Databricks | [databricks/databricks-agent-skills](https://github.com/databricks/databricks-agent-skills) |
-| ClickHouse | [ClickHouse/agent-skills](https://github.com/ClickHouse/agent-skills) |
-| Supabase | [supabase/agent-skills](https://github.com/supabase/agent-skills) |
-| Stripe | [stripe/ai](https://github.com/stripe/ai) |
-| LaunchDarkly | [launchdarkly/agent-skills](https://github.com/launchdarkly/agent-skills) |
-| Sentry | [getsentry/skills](https://github.com/getsentry/skills) |
-| Vercel | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) |
-| Microsoft | [microsoft/agent-skills](https://github.com/microsoft/agent-skills) |
-| Expo | [expo/skills](https://github.com/expo/skills) |
-| Better Auth | [better-auth/skills](https://github.com/better-auth/skills) |
-| Remotion | [remotion-dev/skills](https://github.com/remotion-dev/skills) |
-| GSAP | [greensock/gsap-skills](https://github.com/greensock/gsap-skills) |
-| Notion | [makenotion/skills](https://github.com/makenotion/skills) |
-| WordPress | [WordPress/agent-skills](https://github.com/WordPress/agent-skills) |
 
 ---
 
