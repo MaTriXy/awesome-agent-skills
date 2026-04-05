@@ -9,23 +9,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { LANGUAGES, useLanguage, useTranslations } from "@/lib/i18n";
 import { useSidebar } from "@/lib/SidebarContext";
 
-const LOCAL_SECTIONS = [
-  { id: "what-are-skills", label: "What Are Agent Skills?" },
-  { id: "how-it-works", label: "How It Works" },
-  { id: "directory", label: "Skill Directory" },
-  { id: "quality-standards", label: "Quality Standards" },
-  { id: "using-skills", label: "Using Skills" },
-  { id: "creating-skills", label: "Creating Skills" },
-  { id: "tutorials", label: "Tutorials" },
-  { id: "faq", label: "FAQ" },
-  { id: "contributing", label: "Contributing" }
-];
-
-const mobileNavItems = [
-  "What Is It?", "Directory", "Quality Standards",
-  "Using Skills", "Creating Skills", "Tutorials", "Trends", "FAQ"
-];
-
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
   const [dark, setDark] = useState(false);
@@ -41,6 +24,29 @@ export default function Navbar() {
   const { lang, setLang } = useLanguage();
   const { toggleSidebar } = useSidebar();
   const t = useTranslations();
+
+  const LOCAL_SECTIONS = [
+    { id: "what-are-skills", label: t.sidebar.whatAreSkills },
+    { id: "how-it-works", label: t.sidebar.howItWorks },
+    { id: "directory", label: t.sidebar.directory },
+    { id: "quality-standards", label: t.sidebar.qualityStandards },
+    { id: "using-skills", label: t.sidebar.usingSkills },
+    { id: "creating-skills", label: t.sidebar.creatingSkills },
+    { id: "tutorials", label: t.sidebar.tutorials },
+    { id: "faq", label: t.sidebar.faq },
+    { id: "contributing", label: t.sidebar.contributing }
+  ];
+
+  const mobileNavItems = [
+    { id: "what-are-skills", label: t.sidebar.whatAreSkills },
+    { id: "directory", label: t.sidebar.directory },
+    { id: "quality-standards", label: t.sidebar.qualityStandards },
+    { id: "using-skills", label: t.sidebar.usingSkills },
+    { id: "creating-skills", label: t.sidebar.creatingSkills },
+    { id: "tutorials", label: t.sidebar.tutorials },
+    { id: "trends", label: t.sidebar.trends },
+    { id: "faq", label: t.sidebar.faq }
+  ];
 
   useEffect(() => {
     setMounted(true);
@@ -116,7 +122,7 @@ export default function Navbar() {
             className="w-full bg-neutral-100 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 text-neutral-800 dark:text-neutral-200 flex items-center justify-center py-2 px-4 relative"
           >
             <div className="text-xs sm:text-sm font-medium text-center">
-              <span className="bg-neutral-800 text-white dark:bg-white dark:text-neutral-900 text-[10px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider mr-2 align-middle">Sponsored</span>
+              <span className="bg-neutral-800 text-white dark:bg-white dark:text-neutral-900 text-[10px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider mr-2 align-middle">{t.nav.sponsor}</span>
               Your ad here. Contact <a href="mailto:haileycheng@proton.me" className="underline font-bold hover:text-black dark:hover:text-white">haileycheng@proton.me</a> for sponsorship.
             </div>
             <button 
@@ -174,7 +180,7 @@ export default function Navbar() {
                   (window as any).find(searchQuery.trim());
                 }
               }}
-              placeholder="Search docs (Website Only)..."
+              placeholder={t.nav.search}
               className="w-full pl-9 pr-10 py-1.5 text-sm bg-neutral-100/80 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-600 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400"
             />
             <kbd className="absolute right-2 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10px] font-mono font-semibold text-neutral-400 bg-neutral-200 dark:bg-neutral-700 rounded pointer-events-none">
@@ -211,12 +217,6 @@ export default function Navbar() {
               <Star className="w-3.5 h-3.5 fill-current text-yellow-500" />
               {githubStars ? (githubStars >= 1000 ? `${(githubStars/1000).toFixed(1)}k` : githubStars) : "..."}
             </a>
-            <div className="w-px h-3 bg-neutral-300 dark:bg-neutral-600" />
-            {/* Static Visits Counter */}
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-neutral-700 dark:text-neutral-300 pointer-events-none" title="All time visits">
-              <Eye className="w-3.5 h-3.5" />
-              14,203
-            </div>
           </div>
 
           <div className="hidden lg:block w-px h-4 bg-neutral-200 dark:bg-neutral-700" />
@@ -298,12 +298,12 @@ export default function Navbar() {
           >
             {mobileNavItems.map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/[\s?]/g, "-").replace(/-+/g, "-")}`}
+                key={item.id}
+                href={`#${item.id}`}
                 onClick={() => setMobileMenuOpen(false)}
                 className="py-2 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </motion.div>

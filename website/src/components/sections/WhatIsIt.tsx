@@ -1,15 +1,15 @@
 "use client";
 
-import { Package, Code2, BookOpen } from "lucide-react";
+import { Package, Code2, BookOpen, Check } from "lucide-react";
 import { useTranslations } from "@/lib/i18n";
 
 export default function WhatIsIt() {
   const t = useTranslations();
-  const cards = [
-    { Icon: BookOpen, title: t.what.cards.faster.title, desc: t.what.cards.faster.desc },
-    { Icon: Package, title: t.what.cards.everywhere.title, desc: t.what.cards.everywhere.desc },
-    { Icon: Code2, title: t.what.cards.share.title, desc: t.what.cards.share.desc },
-  ];
+  const icons = [BookOpen, Package, Code2, Check]; // Provide fallback icons
+  const cards = t.what.cards.map((card, i) => ({
+    ...card,
+    Icon: icons[i] || Code2
+  }));
 
   return (
     <section id="what-are-skills" className="scroll-mt-20 py-16 border-b border-neutral-200 dark:border-neutral-800">
@@ -18,7 +18,7 @@ export default function WhatIsIt() {
         {t.what.subtitle}
       </p>
       <p className="text-neutral-600 dark:text-neutral-400 mb-10 max-w-2xl text-base leading-relaxed">
-        Skills are simple text files (called <code>SKILL.md</code>) that teach an AI how to do specific tasks. When you ask the AI to do something, it finds the right skill, reads the instructions, and gets to work.
+        {t.what.howDesc}
       </p>
 
       <div className="grid md:grid-cols-3 gap-4 mb-10">
@@ -35,11 +35,6 @@ export default function WhatIsIt() {
         ))}
       </div>
 
-      <div className="p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-neutral-50 dark:bg-neutral-900">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
-          <strong className="text-neutral-900 dark:text-white">In plain English:</strong> {t.what.callout}
-        </p>
-      </div>
     </section>
   );
 }

@@ -112,7 +112,7 @@ export default function WikiSidebar() {
   }, []);
 
   const getLabel = (key: string): string => {
-    return (t.sidebar.items as Record<string, string>)[key] ?? key;
+    return (t.sidebar as Record<string, string>)[key] ?? key;
   };
 
   const isItemActive = (href: string): boolean => {

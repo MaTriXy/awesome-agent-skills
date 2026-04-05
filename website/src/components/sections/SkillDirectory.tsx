@@ -3,14 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, ExternalLink, Cloud, Wrench, Shield, Briefcase, Cpu, Globe, Server, Code, Zap, Database, Terminal, FileText, Image, Video, PenTool } from "lucide-react";
+import { useTranslations } from "@/lib/i18n";
 
-const skillTabs = [
-  { id: "official", label: "AI Platforms" },
-  { id: "cloud", label: "Cloud & Infrastructure" },
-  { id: "devtools", label: "Developer Tools" },
-  { id: "business", label: "Business & Marketing" },
-  { id: "security", label: "Security & Intelligence" },
-];
 
 const skills = [
   // --- OFFICIAL AI PLATFORMS ---
@@ -81,8 +75,17 @@ const skills = [
 ];
 
 export default function SkillDirectory() {
+  const t = useTranslations();
   const [activeTab, setActiveTab] = useState("official");
   const [searchQuery, setSearchQuery] = useState("");
+
+  const skillTabs = [
+    { id: "official", label: t.directory.tabs.official },
+    { id: "cloud", label: t.directory.tabs.infra },
+    { id: "devtools", label: t.directory.tabs.devtools },
+    { id: "business", label: t.directory.tabs.business },
+    { id: "security", label: t.directory.tabs.security },
+  ];
 
   const filtered = skills.filter((s) =>
     s.category === activeTab &&
@@ -92,9 +95,9 @@ export default function SkillDirectory() {
 
   return (
     <section id="directory" className="scroll-mt-20 py-16 border-b border-neutral-200 dark:border-neutral-800">
-      <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mb-3">Skill Directory</h2>
+      <h2 className="text-3xl font-bold text-neutral-900 dark:text-white mb-3">{t.directory.title}</h2>
       <p className="text-neutral-600 dark:text-neutral-400 mb-8 max-w-2xl text-base leading-relaxed">
-        Official and community-maintained capabilities organized by category. Click any card to visit the source.
+        {t.directory.subtitle}
       </p>
 
       {/* Tabs */}
@@ -119,7 +122,7 @@ export default function SkillDirectory() {
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
         <input
           type="text"
-          placeholder={`Search ${skillTabs.find(t => t.id === activeTab)?.label.toLowerCase()}...`}
+          placeholder={t.directory.searchPlaceholder}
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full pl-9 pr-4 py-2 text-sm bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-600 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400"

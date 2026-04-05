@@ -6,7 +6,7 @@
 
 > 🌐 **[agent-skill.co](https://agent-skill.co)**: Explora el directorio en vivo
 
-Mantenido por [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
+Mantenido por [Hailey Cheng (Cheng Hei Lam)](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
 ¿Nunca has oído hablar de las "agent skills"? Estás en el lugar correcto. Esta es una lista curada por la comunidad de archivos de texto simples que enseñan a los asistentes de IA (como Claude, Copilot o Codex) cómo hacer cosas nuevas bajo demanda, sin necesidad de reentrenamiento. A diferencia de los repositorios de habilidades generados en masa, esta colección se centra en Agent Skills del mundo real creadas y utilizadas por equipos de ingeniería reales. Compatible con Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, Windsurf y más.
 
@@ -167,11 +167,20 @@ El fine-tuning cambia permanentemente la forma en que piensa una IA (es caro y d
 
 ---
 
+## Listas Awesome Relacionadas
+
+- [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - Lista seleccionada de habilidades y herramientas para Claude Code.
+- [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) - Estándares y herramientas para el protocolo DESIGN.md.
+- [awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - Habilidades de agente de código abierto para OpenClaw.
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - Una colección de servidores de Model Context Protocol (MCP).
+
+---
+
 ## Contacto
 
 Preguntas, consultas de asociación o comentarios sobre este proyecto:
 
-- LinkedIn: [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/)
+- LinkedIn: [Hailey Cheng (Cheng Hei Lam)](https://www.linkedin.com/in/heilcheng/)
 - X / Twitter: [@haileyhmt](https://x.com/haileyhmt)
 - Email: [haileycheng@proton.me](mailto:haileycheng@proton.me)
 

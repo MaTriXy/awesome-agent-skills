@@ -3,25 +3,6 @@
 import { CheckCircle2, XCircle } from "lucide-react";
 import { useTranslations } from "@/lib/i18n";
 
-const standards = [
-  {
-    title: "Clarity & Precision",
-    description: "Instructions must be unambiguous. Avoid 'try to' or 'maybe'. Use direct language like 'Execute' or 'Generate'.",
-  },
-  {
-    title: "Focused Scope",
-    description: "A good skill does one thing well. Monolithic skills slow down agents and increase token overhead.",
-  },
-  {
-    title: "Safety & Reliability",
-    description: "Explicitly define error handling and edge cases. A skill should know when to stop and ask for confirmation.",
-  },
-  {
-    title: "Proven Examples",
-    description: "Include at least two real-world usage examples in SKILL.md to ground the agent in concrete behavior.",
-  },
-];
-
 export default function QualityStandards() {
   const t = useTranslations();
 
@@ -34,8 +15,8 @@ export default function QualityStandards() {
 
       {/* Standards list */}
       <div className="grid md:grid-cols-2 gap-4 mb-10">
-        {standards.map((s, i) => (
-          <div key={s.title} className="flex gap-4 p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900">
+        {t.quality.items.map((s, i) => (
+          <div key={i} className="flex gap-4 p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900">
             <span className="text-xs font-bold text-neutral-400 dark:text-neutral-600 mt-0.5 w-4 shrink-0">{String(i + 1).padStart(2, "0")}</span>
             <div>
               <h3 className="text-sm font-semibold text-neutral-900 dark:text-white mb-1">{s.title}</h3>
@@ -50,26 +31,26 @@ export default function QualityStandards() {
         <div className="border border-neutral-200 dark:border-neutral-800 rounded-xl overflow-hidden">
           <div className="flex items-center gap-2 px-4 py-3 bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800">
             <CheckCircle2 className="w-4 h-4 text-neutral-700 dark:text-neutral-400" />
-            <span className="text-xs font-semibold text-neutral-700 dark:text-neutral-300 uppercase tracking-widest">Good pattern</span>
+            <span className="text-xs font-semibold text-neutral-700 dark:text-neutral-300 uppercase tracking-widest">{t.quality.goodHeader}</span>
           </div>
           <div className="p-4">
             <p className="text-xs font-mono text-neutral-600 dark:text-neutral-400 leading-relaxed bg-neutral-50 dark:bg-neutral-900 p-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
-              &quot;When a PR is opened, scan the `packages/core` directory for changes. If changes exist, run `npm test` and output the results as a summary table.&quot;
+              {t.quality.goodPattern}
             </p>
-            <p className="text-xs text-neutral-400 dark:text-neutral-500 mt-3 italic">Clear trigger, specific target, defined output format.</p>
+            <p className="text-xs text-neutral-400 dark:text-neutral-500 mt-3 italic">{t.quality.goodDesc}</p>
           </div>
         </div>
 
         <div className="border border-neutral-200 dark:border-neutral-800 rounded-xl overflow-hidden">
           <div className="flex items-center gap-2 px-4 py-3 bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800">
             <XCircle className="w-4 h-4 text-neutral-400 dark:text-neutral-600" />
-            <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-500 uppercase tracking-widest">Anti-pattern</span>
+            <span className="text-xs font-semibold text-neutral-500 dark:text-neutral-500 uppercase tracking-widest">{t.quality.badHeader}</span>
           </div>
           <div className="p-4">
             <p className="text-xs font-mono text-neutral-400 dark:text-neutral-600 leading-relaxed bg-neutral-50 dark:bg-neutral-900 p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 opacity-70">
-              &quot;Try to look at the code if you have time and maybe let me know if anything looks weird or if there are bugs.&quot;
+              {t.quality.badPattern}
             </p>
-            <p className="text-xs text-neutral-400 dark:text-neutral-500 mt-3 italic">No trigger, no target, no success criteria. Prone to hallucination.</p>
+            <p className="text-xs text-neutral-400 dark:text-neutral-500 mt-3 italic">{t.quality.badDesc}</p>
           </div>
         </div>
       </div>

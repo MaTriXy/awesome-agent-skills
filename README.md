@@ -6,7 +6,7 @@
 
 > 🌐 Browse the live directory at **[agent-skill.co](https://agent-skill.co)**
 
-Maintained by [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
+Maintained by [Hailey Cheng (Cheng Hei Lam)](https://www.linkedin.com/in/heilcheng/) · X [@haileyhmt](https://x.com/haileyhmt) · [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
 Never heard of "agent skills" before? You're in the right place. This is a community-curated list of simple text files that teach AI assistants (like Claude, Copilot, or Codex) how to do new things on demand, without retraining. Unlike bulk-generated skill repositories, this collection focuses on real-world Agent Skills created and used by actual engineering teams. Compatible with Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copilot, Windsurf, and more.
 
@@ -796,6 +796,13 @@ Skills themselves are free text files — you can download and use any skill in 
 
 Every skill in this list is a public GitHub repository — you can read the full instructions before loading anything. Check the repo's stars, last update date, and README. Skills are plain text: there's no executable code that can run on your machine.
 
+## Related Awesome Lists
+
+- [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) - Curated list of skills and tools for Claude Code.
+- [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) - Standards and tools for the DESIGN.md protocol.
+- [awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills) - Open source agent skills for OpenClaw.
+- [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - A collection of Model Context Protocol (MCP) servers.
+
 ---
 
 ## Contributing
@@ -816,7 +823,7 @@ Quick summary:
 
 Questions, partnership inquiries, or feedback about this project:
 
-- LinkedIn: [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/)
+- LinkedIn: [Hailey Cheng (Cheng Hei Lam)](https://www.linkedin.com/in/heilcheng/)
 - X / Twitter: [@haileyhmt](https://x.com/haileyhmt)
 - Email: [haileycheng@proton.me](mailto:haileycheng@proton.me)
 
@@ -828,7 +835,7 @@ If you use these skill patterns in your research or project, please cite:
 
 ```bibtex
 @misc{awesome-agent-skills,
-  author = {Cheng Hei Lam},
+  author = {Hailey Cheng (Cheng Hei Lam)},
   title = {Agent Skill Index},
   year = {2026},
   publisher = {GitHub},

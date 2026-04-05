@@ -3,8 +3,11 @@
 import { Mail } from "lucide-react";
 import { Github, Twitter } from "./Icons";
 import Link from "next/link";
+import { useTranslations } from "@/lib/i18n";
 
 export default function Footer() {
+  const t = useTranslations();
+
   return (
     <footer className="py-24 bg-white dark:bg-black transition-colors border-t border-zinc-100 dark:border-zinc-800">
       <div className="max-w-7xl mx-auto px-6">
@@ -14,21 +17,21 @@ export default function Footer() {
               awesome-agent-skills
             </Link>
             <p className="max-w-xs text-sm text-zinc-500 dark:text-zinc-400 font-medium leading-relaxed">
-              Curated capabilities for the next leap in agentic engineering. Standardizing the instructions that power the world&apos;s most intelligent autonomous assistants.
+              {t.footer.bio}
             </p>
             <div className="max-w-xs text-xs text-zinc-500 dark:text-zinc-400 font-medium space-y-1">
-              <p>Questions, partnership inquiries, or feedback about this project:</p>
+              <p>{t.footer.contactTitle}</p>
               <ul className="list-disc pl-4 space-y-0.5">
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/heilcheng/" target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-white hover:underline">Cheng Hei Lam</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/heilcheng/" target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-white hover:underline">Hailey Cheng (Cheng Hei Lam)</a></li>
                 <li>X / Twitter: <a href="https://x.com/haileyhmt" target="_blank" rel="noopener noreferrer" className="text-zinc-900 dark:text-white hover:underline">@haileyhmt</a></li>
                 <li>Email: <a href="mailto:haileycheng@proton.me" className="text-zinc-900 dark:text-white hover:underline">haileycheng@proton.me</a></li>
               </ul>
             </div>
             
             <div className="max-w-xs text-xs text-zinc-500 dark:text-zinc-600 bg-zinc-50 dark:bg-zinc-900/50 p-3 rounded-lg mt-2 font-mono">
-              <p className="font-semibold text-[10px] uppercase tracking-wider mb-1">Citation</p>
+              <p className="font-semibold text-[10px] uppercase tracking-wider mb-1">{t.footer.citation}</p>
               @misc&#123;awesome-agent-skills,
-                author = &#123;Cheng Hei Lam&#125;,
+                author = &#123;Hailey Cheng (Cheng Hei Lam)&#125;,
                 title = &#123;Agent Skill Index&#125;,
                 year = &#123;2026&#125;,
                 publisher = &#123;GitHub&#125;,
@@ -53,9 +56,9 @@ export default function Footer() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Navigation</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">{t.footer.nav.title}</h4>
             <ul className="space-y-4">
-              {["What is it", "Skill Directory", "Standards", "Guides", "Trends", "FAQ"].map(item => (
+              {t.footer.nav.items.map((item: string) => (
                 <li key={item}>
                   <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="text-sm font-bold text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors">
                     {item}
@@ -66,15 +69,9 @@ export default function Footer() {
           </div>
 
           <div className="space-y-6">
-            <h4 className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Resources</h4>
+            <h4 className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">{t.footer.resources.title}</h4>
             <ul className="space-y-4">
-              {[
-                { label: "agent-skill.co", href: "https://agent-skill.co" },
-                { label: "GitHub Repo", href: "https://github.com/heilcheng/awesome-agent-skills" },
-                { label: "Contributing", href: "https://github.com/heilcheng/awesome-agent-skills/blob/main/CONTRIBUTING.md" },
-                { label: "Skill Template", href: "#creating-skills" },
-                { label: "License", href: "https://github.com/heilcheng/awesome-agent-skills/blob/main/LICENSE" },
-              ].map(item => (
+              {t.footer.resources.items.map((item: { label: string; href: string }) => (
                 <li key={item.label}>
                   <a href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="text-sm font-bold text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors">
                     {item.label}
@@ -87,12 +84,12 @@ export default function Footer() {
 
         <div className="pt-12 border-t border-zinc-100 dark:border-zinc-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-[10px] uppercase font-bold tracking-widest text-zinc-400">
-            &copy; 2026 Agent Skill Index. Open source under MIT.
+            {t.footer.bottom.copyright}
           </p>
           <div className="flex items-center gap-6">
-            <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-400">Built with Next.js &amp; Three.js</span>
+            <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-400">{t.footer.bottom.builtWith}</span>
             <div className="w-px h-4 bg-zinc-200 dark:bg-zinc-800" />
-            <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-400">Curated by Engineering Teams</span>
+            <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-400">{t.footer.bottom.curatedBy}</span>
           </div>
         </div>
       </div>

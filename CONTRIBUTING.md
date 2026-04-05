@@ -60,8 +60,8 @@ Every skill in the index should be self-contained in a `SKILL.md` file. A perfec
 ## ❤️ Sponsorship & Partnerships
 
 Want to support the project or feature your AI platform?
-- **Contact**: Reach out to **Cheng Hei Lam** at [haileycheng@proton.me](mailto:haileycheng@proton.me).
-- **LinkedIn**: [Cheng Hei Lam](https://www.linkedin.com/in/heilcheng/)
+- **Contact**: Reach out to **Hailey Cheng (Cheng Hei Lam)** at [haileycheng@proton.me](mailto:haileycheng@proton.me).
+- **LinkedIn**: [Hailey Cheng (Cheng Hei Lam)](https://www.linkedin.com/in/heilcheng/)
 - **X / Twitter**: [@haileyhmt](https://x.com/haileyhmt)
 
 ---

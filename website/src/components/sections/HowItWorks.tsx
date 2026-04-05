@@ -5,11 +5,7 @@ import { useTranslations } from "@/lib/i18n";
 export default function HowItWorks() {
   const t = useTranslations();
 
-  const stages = [
-    { step: "01", title: t.how.steps.browse.title, description: t.how.steps.browse.desc },
-    { step: "02", title: t.how.steps.load.title, description: t.how.steps.load.desc },
-    { step: "03", title: t.how.steps.use.title, description: t.how.steps.use.desc },
-  ];
+  const stages = t.how.steps;
 
   return (
     <section id="how-it-works" className="scroll-mt-20 py-16 border-b border-neutral-200 dark:border-neutral-800">
@@ -23,7 +19,7 @@ export default function HowItWorks() {
           <div key={s.step} className="p-6 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900">
             <div className="text-2xl font-black text-neutral-200 dark:text-neutral-700 mb-4 font-mono">{s.step}</div>
             <h3 className="text-base font-semibold text-neutral-900 dark:text-white mb-2">{s.title}</h3>
-            <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">{s.description}</p>
+            <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">{s.desc}</p>
           </div>
         ))}
       </div>
