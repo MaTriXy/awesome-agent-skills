@@ -19,8 +19,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "awesome-agent-skills: Curated AI Agent Capabilities",
-  description: "A curated source of truth for modular AI agent capabilities, tools, and workflows in 2026.",
+  title: "Agent Skill Index - The Ultimate AI Agent Skills List & Tutorials",
+  description: "Explore the most comprehensive list of AI agent skills, tools, and workflows. Master agentic AI with our curated skill list, tutorials, and quality standards for 2026.",
+  keywords: ["agent skill list", "skill list", "skill tutorial", "agentic ai", "ai agent", "mcp skills", "ai coding assistants", "claude code", "github copilot skills"],
+  authors: [{ name: "Hailey Cheng" }],
+  openGraph: {
+    title: "Agent Skill Index",
+    description: "The definitive repository for AI agent skills and tutorials.",
+    url: "https://agent-skill.co",
+    siteName: "Agent Skill Index",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Agent Skill Index",
+    description: "The definitive repository for AI agent skills and tutorials.",
+    creator: "@haileyhmt",
+  },
+  metadataBase: new URL("https://agent-skill.co"),
 };
 
 export default function RootLayout({

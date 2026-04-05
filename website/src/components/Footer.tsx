@@ -29,7 +29,7 @@ export default function Footer() {
               <p className="font-semibold text-[10px] uppercase tracking-wider mb-1">Citation</p>
               @misc&#123;awesome-agent-skills,
                 author = &#123;Hailey Cheng&#125;,
-                title = &#123;Awesome Agent Skills&#125;,
+                title = &#123;Agent Skill Index&#125;,
                 year = &#123;2026&#125;,
                 publisher = &#123;GitHub&#125;,
                 url = &#123;https://github.com/heilcheng/awesome-agent-skills&#125;
@@ -87,7 +87,7 @@ export default function Footer() {
 
         <div className="pt-12 border-t border-zinc-100 dark:border-zinc-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-[10px] uppercase font-bold tracking-widest text-zinc-400">
-            &copy; 2026 Awesome Agent Skills. Open source under MIT.
+            &copy; 2026 Agent Skill Index. Open source under MIT.
           </p>
           <div className="flex items-center gap-6">
             <span className="text-[10px] uppercase font-bold tracking-widest text-zinc-400">Built with Next.js &amp; Three.js</span>

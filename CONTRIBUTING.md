@@ -1,4 +1,4 @@
-# Contributing to Awesome Agent Skills
+# Contributing to Agent Skill Index
 
 Thank you for your interest in contributing! This document provides guidelines to ensure consistency and quality across the repository.
 

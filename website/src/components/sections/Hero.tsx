@@ -26,7 +26,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-neutral-900 dark:text-white mb-6 max-w-3xl leading-none">
-            Awesome<br />Agent Skills
+            {t.hero.title}
           </h1>
 
           <p className="text-xl text-neutral-600 dark:text-neutral-400 mb-10 max-w-xl leading-relaxed">

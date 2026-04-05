@@ -1,8 +1,8 @@
-# Awesome Agent Skills
+# Agent Skill Index
 
 [English](README.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md)
 
-[![Awesome Agent Skills Banner](assets/banner.png)](https://agent-skill.co)
+[![Agent Skill Index Banner](assets/banner.png)](https://agent-skill.co)
 
 > 🌐 Browse the live directory at **[agent-skill.co](https://agent-skill.co)**
 
@@ -829,7 +829,7 @@ If you use these skill patterns in your research or project, please cite:
 ```bibtex
 @misc{awesome-agent-skills,
   author = {Hailey Cheng},
-  title = {Awesome Agent Skills},
+  title = {Agent Skill Index},
   year = {2026},
   publisher = {GitHub},
   journal = {GitHub repository},

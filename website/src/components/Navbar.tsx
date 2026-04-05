@@ -142,8 +142,13 @@ export default function Navbar() {
           >
             <PanelLeft className="w-4 h-4 cursor-pointer" />
           </button>
-          <Link href="/" className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 tracking-tight hover:opacity-70 transition-opacity">
-            awesome-agent-skills
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <div className="w-8 h-8 rounded-lg bg-neutral-900 dark:bg-white flex items-center justify-center p-1.5 group-hover:scale-105 transition-transform overflow-hidden shadow-sm">
+              <img src="/icon.png" alt="Logo" className="w-full h-full object-contain" />
+            </div>
+            <span className="font-bold text-base tracking-tight text-neutral-900 dark:text-white">
+              {t.nav.brand}
+            </span>
           </Link>
           <a
             href="https://agent-skill.co"

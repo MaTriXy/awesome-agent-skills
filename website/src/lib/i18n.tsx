@@ -15,7 +15,7 @@ export const LANGUAGES = [
 
 const t = {
   en: {
-    nav: { search: "Search docs...", github: "View on GitHub" },
+    nav: { brand: "Agent Skill Index", search: "Search docs...", github: "View on GitHub" },
     sidebar: {
       intro: "Introduction", directory: "Directory",
       standards: "Standards & Guides", resources: "Resources",
@@ -31,8 +31,9 @@ const t = {
       },
     },
     hero: {
+      title: "Agent Skill Index",
       badge: "Updated April 2026",
-      subtitle: "A curated, community-maintained collection of modular AI agent capabilities. Skills, tools, and workflows for the modern agentic era.",
+      subtitle: "The definitive list of AI agent skills, tools, and workflows. Expert tutorials for the modern agentic era.",
       browseBtn: "Browse Directory", githubBtn: "View on GitHub",
     },
     what: {
@@ -102,7 +103,7 @@ const t = {
   },
 
   "zh-TW": {
-    nav: { search: "搜尋文件...", github: "在 GitHub 上查看" },
+    nav: { brand: "Agent Skill Index", search: "搜尋文件...", github: "在 GitHub 上查看" },
     sidebar: {
       intro: "介紹", directory: "目錄",
       standards: "標準與指南", resources: "資源",
@@ -118,8 +119,9 @@ const t = {
       },
     },
     hero: {
+      title: "Agent Skill Index",
       badge: "2026 年 4 月更新",
-      subtitle: "精心策劃的社群 AI Agent 能力集合。現代 Agent 時代的技能、工具和工作流程。",
+      subtitle: "Agent Skill Index 技能目錄：AI Agent 能力、工具與工作流程的權威清單與教學。",
       browseBtn: "瀏覽目錄", githubBtn: "在 GitHub 上查看",
     },
     what: {
@@ -189,7 +191,7 @@ const t = {
   },
 
   "zh-CN": {
-    nav: { search: "搜索文档...", github: "在 GitHub 上查看" },
+    nav: { brand: "Agent Skill Index", search: "搜索文档...", github: "在 GitHub 上查看" },
     sidebar: {
       intro: "介绍", directory: "目录",
       standards: "标准与指南", resources: "资源",
@@ -205,8 +207,9 @@ const t = {
       },
     },
     hero: {
+      title: "Agent Skill Index",
       badge: "2026 年 4 月更新",
-      subtitle: "精心策划的社区 AI Agent 能力集合。现代 Agent 时代的技能、工具和工作流程。",
+      subtitle: "Agent Skill Index 技能目录：AI Agent 能力、工具与工作流程的权威清单与教程。",
       browseBtn: "浏览目录", githubBtn: "在 GitHub 上查看",
     },
     what: {
@@ -276,7 +279,7 @@ const t = {
   },
 
   ja: {
-    nav: { search: "ドキュメントを検索...", github: "GitHubで見る" },
+    nav: { brand: "Agent Skill Index", search: "ドキュメントを検索...", github: "GitHubで見る" },
     sidebar: {
       intro: "はじめに", directory: "ディレクトリ",
       standards: "標準とガイド", resources: "リソース",
@@ -292,8 +295,9 @@ const t = {
       },
     },
     hero: {
+      title: "Agent Skill Index",
       badge: "2026年4月更新",
-      subtitle: "モジュール式 AI エージェント機能のコミュニティ管理コレクション。現代のエージェント時代のスキル、ツール、ワークフロー。",
+      subtitle: "AIエージェントスキルの究極のリストとチュートリアル。現代のエージェント時代のための機能、ツール、ワークフロー。",
       browseBtn: "ディレクトリを見る", githubBtn: "GitHubで見る",
     },
     what: {
@@ -363,7 +367,7 @@ const t = {
   },
 
   ko: {
-    nav: { search: "문서 검색...", github: "GitHub에서 보기" },
+    nav: { brand: "Agent Skill Index", search: "문서 검색...", github: "GitHub에서 보기" },
     sidebar: {
       intro: "소개", directory: "디렉토리",
       standards: "표준 및 가이드", resources: "리소스",
@@ -379,8 +383,9 @@ const t = {
       },
     },
     hero: {
+      title: "Agent Skill Index",
       badge: "2026년 4월 업데이트",
-      subtitle: "모듈식 AI 에이전트 기능의 커뮤니티 관리 컬렉션. 현대 에이전트 시대를 위한 스킬, 도구, 워크플로우.",
+      subtitle: "AI 에이전트 스킬의 궁극적인 리스트와 튜토리얼. 현대 에이전트 시대를 위한 기능, 도구, 워크플로우.",
       browseBtn: "디렉토리 보기", githubBtn: "GitHub에서 보기",
     },
     what: {
@@ -450,7 +455,7 @@ const t = {
   },
 
   es: {
-    nav: { search: "Buscar documentación...", github: "Ver en GitHub" },
+    nav: { brand: "Agent Skill Index", search: "Buscar documentación...", github: "Ver en GitHub" },
     sidebar: {
       intro: "Introducción", directory: "Directorio",
       standards: "Estándares y Guías", resources: "Recursos",
@@ -466,8 +471,9 @@ const t = {
       },
     },
     hero: {
+      title: "Agent Skill Index",
       badge: "Actualizado abril 2026",
-      subtitle: "Una colección comunitaria de capacidades modulares para agentes de IA. Habilidades, herramientas y flujos de trabajo para la era agéntica moderna.",
+      subtitle: "La lista definitiva de habilidades, herramientas y flujos de trabajo para agentes de IA. Tutoriales expertos para la era agéntica moderna.",
       browseBtn: "Ver Directorio", githubBtn: "Ver en GitHub",
     },
     what: {

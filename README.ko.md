@@ -1,8 +1,8 @@
-# Awesome Agent Skills
+# Agent Skill Index
 
 [English](README.md) | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md)
 
-[![Awesome Agent Skills Banner](assets/banner.png)](https://agent-skill.co)
+[![Agent Skill Index Banner](assets/banner.png)](https://agent-skill.co)
 
 > 🌐 **[agent-skill.co](https://agent-skill.co)** 에서 실시간 디렉토리를 탐색하세요.
 

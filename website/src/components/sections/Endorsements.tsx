@@ -12,7 +12,7 @@ const ENDORSEMENTS = [
     type: "quote",
   },
   {
-    name: "Awesome Agent Skills",
+    name: "Agent Skill Index",
     handle: "github",
     role: "Community",
     text: "Join 1,200+ developers contributing to the skill ecosystem.",
