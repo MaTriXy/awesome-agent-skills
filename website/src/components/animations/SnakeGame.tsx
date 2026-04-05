@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Play, RotateCcw, Monitor, Globe, X, Minus, Square } from "lucide-react";
+import { useTranslations } from "@/lib/i18n";
 
 const GRID_SIZE = 20;
 const INITIAL_SPEED = 150;
@@ -16,6 +17,7 @@ export default function SnakeGame() {
   const [gameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
+  const t = useTranslations();
 
   const gameLoopRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -125,11 +127,11 @@ export default function SnakeGame() {
         {/* Scoreboard */}
         <div className="flex justify-between items-center mb-4 px-2">
             <div className="flex flex-col">
-                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">Score</span>
+                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{t.snake.score}</span>
                 <span className="text-xl font-black text-neutral-800">{score}</span>
             </div>
             <div className="flex flex-col items-end">
-                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">Best</span>
+                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{t.snake.best}</span>
                 <span className="text-xl font-black text-neutral-400">{highScore}</span>
             </div>
         </div>
@@ -179,10 +181,10 @@ export default function SnakeGame() {
             <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] flex flex-col items-center justify-center p-6 text-center animate-in fade-in zoom-in duration-300">
                 <div className="mb-6">
                     <div className="text-2xl font-black text-neutral-800 tracking-tighter mb-1 uppercase">
-                        {gameOver ? "Ouch! Try Again?" : "Agent Snake"}
+                        {gameOver ? t.snake.gameOver : t.snake.title}
                     </div>
                     <p className="text-xs text-neutral-500 font-medium leading-relaxed">
-                        Navigate your agent through the directory. <br/>Eat skills to grow stronger.
+                        {t.snake.desc}
                     </p>
                 </div>
                 <button
@@ -190,7 +192,7 @@ export default function SnakeGame() {
                     className="flex items-center gap-2 px-6 py-3 bg-emerald-500 text-white rounded-full font-bold text-sm shadow-lg shadow-emerald-500/20 hover:scale-105 active:scale-95 transition-all"
                 >
                     {gameOver ? <RotateCcw size={16} /> : <Play size={16} fill="currentColor" />}
-                    {gameOver ? "REBOOT" : "INITIALIZE"}
+                    {gameOver ? t.snake.reboot : t.snake.init}
                 </button>
             </div>
           )}
@@ -198,9 +200,9 @@ export default function SnakeGame() {
 
         {/* Footer controls instruction */}
         <div className="mt-4 flex justify-center items-center gap-6 text-[9px] font-bold text-neutral-400 uppercase tracking-widest">
-            <span className="flex items-center gap-1.5"><Monitor size={10} strokeWidth={3}/> WASD / ARROWS</span>
+            <span className="flex items-center gap-1.5"><Monitor size={10} strokeWidth={3}/> {t.snake.controls}</span>
             <span className="w-1 h-1 bg-neutral-300 rounded-full"/>
-            <span>CUTE MODE: ON</span>
+            <span>{t.snake.mode}</span>
         </div>
       </div>
     </div>

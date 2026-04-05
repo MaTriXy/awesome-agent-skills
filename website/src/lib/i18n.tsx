@@ -79,6 +79,17 @@ const t = {
       ],
     },
     contributing: { title: "Contributing", subtitle: "Help grow the most comprehensive open source collection of AI agent skills." },
+    snake: {
+      title: "Agent Snake",
+      gameOver: "Ouch! Try Again?",
+      desc: "Navigate your agent through the directory. Eat skills to grow stronger.",
+      init: "INITIALIZE",
+      reboot: "REBOOT",
+      controls: "WASD / ARROWS",
+      mode: "CUTE MODE: ON",
+      score: "Score",
+      best: "Best",
+    },
   },
 
   "zh-TW": {
@@ -146,6 +157,17 @@ const t = {
       ],
     },
     contributing: { title: "貢獻", subtitle: "幫助打造最全面的開源 AI Agent 技能集合。" },
+    snake: {
+      title: "Agent 貪食蛇",
+      gameOver: "哎呀！再試一次？",
+      desc: "引導您的 Agent 穿梭於目錄中。吞噬技能以變得更強。",
+      init: "初始化",
+      reboot: "重啟",
+      controls: "WASD / 方向鍵",
+      mode: "可愛模式：開啟",
+      score: "分數",
+      best: "最高",
+    },
   },
 
   "zh-CN": {
@@ -213,6 +235,17 @@ const t = {
       ],
     },
     contributing: { title: "贡献", subtitle: "帮助打造最全面的开源 AI Agent 技能集合。" },
+    snake: {
+      title: "Agent 贪食蛇",
+      gameOver: "哎呀！再试一次？",
+      desc: "引导您的 Agent 穿梭于目录中。吞噬技能以变得更强。",
+      init: "初始化",
+      reboot: "重启",
+      controls: "WASD / 方向键",
+      mode: "可爱模式：开启",
+      score: "分数",
+      best: "最高",
+    },
   },
 
   ja: {
@@ -280,6 +313,17 @@ const t = {
       ],
     },
     contributing: { title: "コントリビュート", subtitle: "最も包括的なオープンソース AI エージェントスキルコレクションの成長を助けてください。" },
+    snake: {
+      title: "Agent スネーク",
+      gameOver: "おっと！もう一度？",
+      desc: "エージェントをディレクトリ内で操作してください。スキルを食べて強くなりましょう。",
+      init: "初期化",
+      reboot: "再起動",
+      controls: "WASD / 矢印キー",
+      mode: "キュートモード：オン",
+      score: "スコア",
+      best: "ベスト",
+    },
   },
 
   ko: {
@@ -347,6 +391,17 @@ const t = {
       ],
     },
     contributing: { title: "기여하기", subtitle: "가장 포괄적인 오픈 소스 AI 에이전트 스킬 컬렉션 성장에 도움을 주세요." },
+    snake: {
+      title: "Agent 스네이크",
+      gameOver: "앗! 다시 시도할까요?",
+      desc: "에이전트를 디렉토리에서 안내하세요. 스킬을 먹고 더 강해지세요.",
+      init: "초기화",
+      reboot: "재부팅",
+      controls: "WASD / 방향키",
+      mode: "큐트 모드: 켜짐",
+      score: "점수",
+      best: "최고",
+    },
   },
 
   es: {
@@ -414,6 +469,17 @@ const t = {
       ],
     },
     contributing: { title: "Contribuir", subtitle: "Ayuda a hacer crecer la colección de código abierto más completa de agent skills de IA." },
+    snake: {
+      title: "Agent Snake",
+      gameOver: "¡Ups! ¿Intentar de nuevo?",
+      desc: "Navega con tu agente por el directorio. Come skills para fortalecerte.",
+      init: "INICIALIZAR",
+      reboot: "REINICIAR",
+      controls: "WASD / FLECHAS",
+      mode: "MODO CUTE: ACTIVADO",
+      score: "Puntuación",
+      best: "Mejor",
+    },
   },
 } as const;
 
