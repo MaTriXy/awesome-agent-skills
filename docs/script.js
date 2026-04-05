@@ -1,44 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Reveal elements on scroll
-    const sections = document.querySelectorAll('.glass-section');
-    
-    // Initial hidden state
-    sections.forEach(sec => {
-        sec.style.opacity = '0';
-        sec.style.transform = 'translateY(20px)';
-        sec.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease';
+    const themeToggle = document.getElementById('theme-toggle');
+    const moonIcon = document.getElementById('moon-icon');
+    const sunIcon = document.getElementById('sun-icon');
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+
+    // Theme Toggle
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateIcons(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+        let newTheme = theme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcons(newTheme);
     });
 
-    const revealSection = () => {
-        const triggerBottom = window.innerHeight * 0.85;
-        
-        sections.forEach(sec => {
-            const sectionTop = sec.getBoundingClientRect().top;
-            if (sectionTop < triggerBottom) {
-                sec.style.opacity = '1';
-                sec.style.transform = 'translateY(0)';
-            }
+    function updateIcons(theme) {
+        if (theme === 'dark') {
+            moonIcon.style.display = 'none';
+            sunIcon.style.display = 'block';
+        } else {
+            moonIcon.style.display = 'block';
+            sunIcon.style.display = 'none';
+        }
+    }
+
+    // Mobile Menu Toggle
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
         });
-    };
-
-    window.addEventListener('scroll', revealSection);
-    
-    // Trigger once on load
-    revealSection();
-
-    // Interactive mouse movement for blobs to follow subtly
-    const blob1 = document.querySelector('.shape1');
-    const blob2 = document.querySelector('.shape2');
-    
-    document.addEventListener('mousemove', (e) => {
-        const x = e.clientX / window.innerWidth;
-        const y = e.clientY / window.innerHeight;
-        
-        if (blob1) {
-            blob1.style.transform = `translate(${x * 30}px, ${y * 30}px)`;
-        }
-        if (blob2) {
-            blob2.style.transform = `translate(${x * -40}px, ${y * -40}px)`;
-        }
-    });
+    }
 });

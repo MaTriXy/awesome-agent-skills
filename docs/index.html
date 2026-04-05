@@ -1,62 +1,872 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Agent Skills</title>
-    <meta name="description" content="A curated collection of skills, tools, and capabilities for AI coding agents. Learn how to use and create agent skills.">
+    <title>Awesome Agent Skills - Wiki</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="blob shape1"></div>
-    <div class="blob shape2"></div>
-    <div class="blob shape3"></div>
-    
-    <div class="container">
-        <header class="glass-section hero">
-            <h1>Awesome Agent Skills</h1>
-            <p>A curated collection of skills, tools, and capabilities for AI coding agents.</p>
-        </header>
+    <header class="top-bar">
+        <div class="logo">Awesome Agent Skills</div>
+        <div style="display:flex; align-items:center;">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme" style="margin-right: 16px;">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
 
-        <section class="glass-section" id="what-is">
-            <h2>What Are Agent Skills?</h2>
-            <p>Think of Agent Skills as instructions for AI assistants. Instead of the AI needing to know everything upfront, skills let it learn new abilities on the fly, like giving an assistant a new recipe card instead of a whole cookbook.</p>
-            <p>Skills are simple text files called <strong>SKILL.md</strong> that teach an AI how to perform specific tasks. When you ask the AI to do something, it finds the right skill, reads the instructions, and gets to work.</p>
-            <h3>How It Works</h3>
-            <ul>
-                <li><strong>Browse:</strong> The AI reviews the available skills.</li>
-                <li><strong>Load:</strong> When needed, it reads the detailed instructions.</li>
-                <li><strong>Use:</strong> The AI follows the steps and executes the task flawlessly.</li>
-            </ul>
-        </section>
+    <div class="wiki-layout">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-toc" id="toc">
+<ul>
+<li><a href="#awesome-agent-skills">Awesome Agent Skills</a><ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#what-are-agent-skills">What Are Agent Skills?</a><ul>
+<li><a href="#how-it-works">How It Works</a></li>
+<li><a href="#why-this-matters">Why This Matters</a></li>
+</ul>
+</li>
+<li><a href="#compatible-agents">Compatible Agents</a></li>
+<li><a href="#skill-list">Skill List</a><ul>
+<li><a href="#official-claude-skills-document-processing">Official Claude Skills (Document Processing)</a></li>
+<li><a href="#official-openai-codex-skills">Official OpenAI Codex Skills</a></li>
+<li><a href="#official-huggingface-skills">Official HuggingFace Skills</a></li>
+<li><a href="#community-skills">Community Skills</a><ul>
+<li><a href="#skill-collections">Skill Collections</a></li>
+<li><a href="#document-processing">Document Processing</a></li>
+<li><a href="#development-code-tools">Development &amp; Code Tools</a></li>
+<li><a href="#data-analysis">Data &amp; Analysis</a></li>
+<li><a href="#integration-automation">Integration &amp; Automation</a></li>
+<li><a href="#collaboration-project-management">Collaboration &amp; Project Management</a></li>
+<li><a href="#security-systems">Security &amp; Systems</a></li>
+<li><a href="#advanced-research">Advanced &amp; Research</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#official-tutorials-and-guides">Official Tutorials and Guides</a><ul>
+<li><a href="#claude-and-anthropic">Claude and Anthropic</a></li>
+<li><a href="#github-copilot">GitHub Copilot</a></li>
+<li><a href="#model-context-protocol-mcp">Model Context Protocol (MCP)</a></li>
+</ul>
+</li>
+<li><a href="#using-skills">Using Skills</a><ul>
+<li><a href="#using-skills-in-claudeai">Using Skills in Claude.ai</a></li>
+<li><a href="#using-skills-in-google-antigravity">Using Skills in Google Antigravity</a></li>
+<li><a href="#using-skills-in-claude-code">Using Skills in Claude Code</a></li>
+<li><a href="#using-skills-in-codex">Using Skills in Codex</a></li>
+<li><a href="#using-skills-in-vs-code">Using Skills in VS Code</a></li>
+<li><a href="#using-skills-in-copilot-cli">Using Skills in Copilot CLI</a></li>
+<li><a href="#using-mcp-servers-claude-desktop">Using MCP Servers (Claude Desktop)</a></li>
+</ul>
+</li>
+<li><a href="#creating-skills">Creating Skills</a><ul>
+<li><a href="#skill-structure">Skill Structure</a></li>
+<li><a href="#basic-skillmd-template">Basic SKILL.md Template</a></li>
+<li><a href="#mcp-server-example-python">MCP Server Example (Python)</a></li>
+</ul>
+</li>
+<li><a href="#community-resources">Community Resources</a><ul>
+<li><a href="#langchain-tools">LangChain Tools</a></li>
+<li><a href="#articles-research">Articles &amp; Research</a></li>
+</ul>
+</li>
+<li><a href="#frequently-asked-questions">Frequently Asked Questions</a><ul>
+<li><a href="#what-are-agent-skills_1">What are Agent Skills?</a></li>
+<li><a href="#how-are-agent-skills-different-from-fine-tuning">How are Agent Skills different from fine-tuning?</a></li>
+<li><a href="#whats-the-difference-between-agent-skills-and-mcp">What's the difference between Agent Skills and MCP?</a></li>
+<li><a href="#which-ai-tools-support-agent-skills">Which AI tools support Agent Skills?</a></li>
+<li><a href="#do-agent-skills-run-code">Do Agent Skills run code?</a></li>
+<li><a href="#how-do-i-create-my-first-agent-skill">How do I create my first Agent Skill?</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#references">References</a></li>
+<li><a href="#agent-skills-trends-capabilities-2026">Agent Skills Trends &amp; Capabilities (2026)</a><ul>
+<li><a href="#1-autonomous-execution-goal-orientation">1. Autonomous Execution &amp; Goal Orientation</a></li>
+<li><a href="#2-multi-agent-orchestration">2. Multi-Agent Orchestration</a></li>
+<li><a href="#3-direct-access-agentic-ides">3. Direct Access &amp; Agentic IDEs</a></li>
+<li><a href="#4-multimodality-deep-research">4. Multimodality &amp; "Deep Research"</a></li>
+<li><a href="#5-invisible-enterprise-integration">5. Invisible Enterprise Integration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </nav>
+        <main class="content">
+            <div class="markdown-body">
+                
+<h1 id="awesome-agent-skills">Awesome Agent Skills</h1>
+<p><a href="README.md">English</a> | <a href="README.zh-TW.md">繁體中文</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.ja.md">日本語</a> | <a href="README.ko.md">한국어</a> | <a href="README.es.md">Español</a></p>
+<p>A curated list of skills, tools, and capabilities for AI coding agents.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#what-are-agent-skills">What Are Agent Skills?</a></li>
+<li><a href="#compatible-agents">Compatible Agents</a></li>
+<li><a href="#skill-list">Skill List</a></li>
+<li><a href="#official-tutorials-and-guides">Official Tutorials and Guides</a></li>
+<li><a href="#using-skills">Using Skills</a></li>
+<li><a href="#creating-skills">Creating Skills</a></li>
+<li><a href="#community-resources">Community Resources</a></li>
+<li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+<hr />
+<h2 id="what-are-agent-skills">What Are Agent Skills?</h2>
+<p>Think of <strong>Agent Skills</strong> as "how-to guides" for AI assistants. Instead of the AI needing to know everything upfront, skills let it learn new abilities on the fly, like giving someone a recipe card instead of making them memorize an entire cookbook.</p>
+<p>Skills are simple text files (called <code>SKILL.md</code>) that teach an AI how to do specific tasks. When you ask the AI to do something, it finds the right skill, reads the instructions, and gets to work.</p>
+<h3 id="how-it-works">How It Works</h3>
+<p>Skills load in three stages:</p>
+<ol>
+<li><strong>Browse</strong> - The AI sees a list of available skills (just names and short descriptions)</li>
+<li><strong>Load</strong> - When a skill is needed, the AI reads the full instructions</li>
+<li><strong>Use</strong> - The AI follows the instructions and accesses any helper files</li>
+</ol>
+<h3 id="why-this-matters">Why This Matters</h3>
+<ul>
+<li><strong>Faster and lighter</strong> - The AI only loads what it needs, when it needs it</li>
+<li><strong>Works everywhere</strong> - Create a skill once, use it with any compatible AI tool</li>
+<li><strong>Easy to share</strong> - Skills are just files you can copy, download, or share on GitHub</li>
+</ul>
+<p>Skills are <strong>instructions</strong>, not code. The AI reads them like a human would read a guide, then follows the steps.</p>
+<hr />
+<h2 id="compatible-agents">Compatible Agents</h2>
+<p>The following platforms have documented support for Agent Skills:</p>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Code</td>
+<td><a href="https://code.claude.com/docs/en/skills">code.claude.com/docs/en/skills</a></td>
+</tr>
+<tr>
+<td>Claude.ai</td>
+<td><a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude">support.claude.com</a></td>
+</tr>
+<tr>
+<td>Codex (OpenAI)</td>
+<td><a href="https://developers.openai.com/codex/skills">developers.openai.com</a></td>
+</tr>
+<tr>
+<td>GitHub Copilot</td>
+<td><a href="https://docs.github.com/copilot/concepts/agents/about-agent-skills">docs.github.com</a></td>
+</tr>
+<tr>
+<td>VS Code</td>
+<td><a href="https://code.visualstudio.com/docs/copilot/customization/agent-skills">code.visualstudio.com</a></td>
+</tr>
+<tr>
+<td>Antigravity</td>
+<td><a href="https://antigravity.google/docs/skills">antigravity.google</a></td>
+</tr>
+<tr>
+<td>Kiro</td>
+<td><a href="https://kiro.dev/docs/skills/">kiro.dev</a></td>
+</tr>
+<tr>
+<td>Gemini CLI</td>
+<td><a href="https://geminicli.com/docs/cli/skills/">geminicli.com</a></td>
+</tr>
+<tr>
+<td>Junie</td>
+<td><a href="https://junie.jetbrains.com/docs/agent-skills.html">junie.jetbrains.com</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="skill-list">Skill List</h2>
+<h3 id="official-claude-skills-document-processing">Official Claude Skills (Document Processing)</h3>
+<p>Claude provides built-in skills for common document types:</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docx</td>
+<td>Create, edit, analyze Word documents with tracked changes</td>
+<td><a href="https://github.com/anthropics/skills">anthropics/skills</a></td>
+</tr>
+<tr>
+<td>xlsx</td>
+<td>Spreadsheet manipulation: formulas, charts, data transformations</td>
+<td><a href="https://github.com/anthropics/skills">anthropics/skills</a></td>
+</tr>
+<tr>
+<td>pptx</td>
+<td>Read, generate, and adjust slides, layouts, templates</td>
+<td><a href="https://github.com/anthropics/skills">anthropics/skills</a></td>
+</tr>
+<tr>
+<td>pdf</td>
+<td>Extract text, tables, metadata from PDFs</td>
+<td><a href="https://github.com/anthropics/skills">anthropics/skills</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="official-openai-codex-skills">Official OpenAI Codex Skills</h3>
+<p>Codex supports skills at different scopes:</p>
+<table>
+<thead>
+<tr>
+<th>Skill Scope</th>
+<th>Location</th>
+<th>Suggested Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REPO</td>
+<td><code>$CWD/.codex/skills</code></td>
+<td>Skills relevant to a working folder (e.g., microservice or module)</td>
+</tr>
+<tr>
+<td>REPO</td>
+<td><code>$CWD/../.codex/skills</code></td>
+<td>Skills for shared areas in parent folders</td>
+</tr>
+<tr>
+<td>REPO</td>
+<td><code>$REPO_ROOT/.codex/skills</code></td>
+<td>Root skills for everyone using the repository</td>
+</tr>
+<tr>
+<td>USER</td>
+<td><code>$CODEX_HOME/skills</code> (default: <code>~/.codex/skills</code>)</td>
+<td>Personal skills that apply to any repository</td>
+</tr>
+<tr>
+<td>ADMIN</td>
+<td><code>/etc/codex/skills</code></td>
+<td>SDK scripts, automation, and default admin skills</td>
+</tr>
+<tr>
+<td>SYSTEM</td>
+<td>Bundled with Codex</td>
+<td>Built-in skills like skill-creator and plan</td>
+</tr>
+</tbody>
+</table>
+<h3 id="official-huggingface-skills">Official HuggingFace Skills</h3>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hf_dataset_creator</td>
+<td>Prompts, templates, and scripts for creating structured training datasets</td>
+<td><a href="https://github.com/huggingface/skills">huggingface/skills</a></td>
+</tr>
+<tr>
+<td>hf_model_evaluation</td>
+<td>Instructions plus utilities for orchestrating evaluation jobs, generating reports, and mapping metrics</td>
+<td><a href="https://github.com/huggingface/skills">huggingface/skills</a></td>
+</tr>
+<tr>
+<td>hf-llm-trainer</td>
+<td>Comprehensive training skill with guidance, helper scripts, cost estimators</td>
+<td><a href="https://github.com/huggingface/skills">huggingface/skills</a></td>
+</tr>
+<tr>
+<td>hf-paper-publisher</td>
+<td>Tools for publishing and managing research papers on Hugging Face Hub</td>
+<td><a href="https://github.com/huggingface/skills">huggingface/skills</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="community-skills">Community Skills</h3>
+<p>Community-maintained skills and collections (verify before use):</p>
+<h4 id="skill-collections">Skill Collections</h4>
+<table>
+<thead>
+<tr>
+<th>Repository</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/anthropics/skills">anthropics/skills</a></td>
+<td>Official Anthropic collection (document editing, data analysis)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/openai/skills">openai/skills</a></td>
+<td>Official OpenAI Codex skills catalog</td>
+</tr>
+<tr>
+<td><a href="https://github.com/huggingface/skills">huggingface/skills</a></td>
+<td>HuggingFace skills (compatible with Claude, Codex, Gemini)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/skillcreatorai/Ai-Agent-Skills">skillcreatorai/Ai-Agent-Skills</a></td>
+<td>SkillCreator.ai collection with CLI installer</td>
+</tr>
+<tr>
+<td><a href="https://agentskill.sh">agentskill.sh</a></td>
+<td>44k+ skills directory with security scanning and <code>/learn</code> installer</td>
+</tr>
+<tr>
+<td><a href="https://www.tutuoai.com/">TutuoAI</a></td>
+<td>Agent-native marketplace for skills, tools, and workflow blueprints (machine-readable catalog)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/karanb192/awesome-claude-skills">karanb192/awesome-claude-skills</a></td>
+<td>50+ verified skills for Claude Code and Claude.ai</td>
+</tr>
+<tr>
+<td><a href="https://github.com/uxuiprinciples/agent-skills">uxuiprinciples/agent-skills</a></td>
+<td>5 UX/UI skills: evaluate interfaces against 168 research-backed principles, detect antipatterns, inject UX context into AI coding sessions</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shajith003/awesome-claude-skills">shajith003/awesome-claude-skills</a></td>
+<td>Skills for specialized capabilities</td>
+</tr>
+<tr>
+<td><a href="https://github.com/GuDaStudio/skills">GuDaStudio/skills</a></td>
+<td>Multi-agent collaboration skills</td>
+</tr>
+<tr>
+<td><a href="https://github.com/DougTrajano/pydantic-ai-skills">DougTrajano/pydantic-ai-skills</a></td>
+<td>Pydantic AI integration</td>
+</tr>
+<tr>
+<td><a href="https://github.com/OmidZamani/dspy-skills">OmidZamani/dspy-skills</a></td>
+<td>Skills for DSPy framework</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hikanner/agent-skills">hikanner/agent-skills</a></td>
+<td>Curated Claude Agent Skills collection</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gradion-ai/freeact-skills">gradion-ai/freeact-skills</a></td>
+<td>Freeact agent library skills</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dmgrok/agent_skills_directory">dmgrok/agent_skills_directory</a></td>
+<td>npm-like CLI for skills (<code>brew install dmgrok/tap/skills</code>) - aggregates 177+ skills from 24 providers</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gotalab/skillport">gotalab/skillport</a></td>
+<td>Skills distribution via CLI or MCP</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mhattingpete/claude-skills-marketplace">mhattingpete/claude-skills-marketplace</a></td>
+<td>Git, code review, and testing skills</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kukapay/crypto-skills">kukapay/crypto-skills</a></td>
+<td>Cryptocurrency, web3 and blockchain skills</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chadboyda/agent-gtm-skills">chadboyda/agent-gtm-skills</a></td>
+<td>18 go-to-market skills: pricing, outbound, SEO, ads, retention, and ops</td>
+</tr>
+<tr>
+<td><a href="https://github.com/product-on-purpose/pm-skills">product-on-purpose/pm-skills</a></td>
+<td>24 product management skills covering discovery, definition, delivery, and optimization</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sanjay3290/ai-skills">sanjay3290/ai-skills</a></td>
+<td>Google Workspace (Gmail, Chat, Calendar, Docs, Drive, Sheets, Slides), AI delegation (Jules, Manus, Deep Research), and database skills</td>
+</tr>
+<tr>
+<td><a href="https://github.com/RioBot-Grind/agentfund-skill">RioBot-Grind/agentfund-skill</a></td>
+<td>Crowdfunding for AI agents on Base chain - milestone escrow</td>
+</tr>
+<tr>
+<td><a href="https://github.com/browser-act/skills">browser-act/skills</a></td>
+<td>22 browser automation skills for structured data extraction from Amazon, YouTube, Google Maps, Reddit, WeChat, and Zhihu</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yshishenya/stitchflow">yshishenya/stitchflow</a></td>
+<td>Cross-agent UI design skill collection for turning briefs and mockups into screens, variants, HTML, and screenshots</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cuongducle/community-demand-prospecting-skill">cuongducle/community-demand-prospecting-skill</a></td>
+<td>Repo audit, market research, positioning, and community outreach planning</td>
+</tr>
+<tr>
+<td><a href="https://github.com/noizai/skills">noizai/skills</a></td>
+<td>Voice-first skills: TTS with SRT dubbing and companion voice presets</td>
+</tr>
+</tbody>
+</table>
+<h4 id="document-processing">Document Processing</h4>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/smerchek/claude-epub-skill">Markdown to EPUB</a></td>
+<td>Converts markdown documents into professional EPUB ebook files</td>
+</tr>
+<tr>
+<td><a href="https://github.com/talkstream/ru-text">ru-text</a></td>
+<td>Russian text quality: ~1,040 rules for typography, info-style, editorial, UX writing, business correspondence</td>
+</tr>
+</tbody>
+</table>
+<h4 id="development-code-tools">Development &amp; Code Tools</h4>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/zxkane/aws-skills">aws-skills</a></td>
+<td>AWS development with CDK best practices</td>
+</tr>
+<tr>
+<td><a href="https://github.com/chrisvoncsefalvay/claude-d3js-skill">D3.js Visualization</a></td>
+<td>D3 charts and interactive data visualizations</td>
+</tr>
+<tr>
+<td><a href="https://github.com/muthuishere/hand-drawn-diagrams">hand-drawn-diagrams</a></td>
+<td>Generate hand-drawn Excalidraw diagrams from a prompt — animated SVG, hosted edit link, and PNG export. Works with Claude Code, Codex, and any agent supporting standard skill paths</td>
+</tr>
+<tr>
+<td><a href="https://github.com/lackeyjb/playwright-skill">Playwright Automation</a></td>
+<td>Browser automation for testing web apps</td>
+</tr>
+<tr>
+<td><a href="https://github.com/rickygao/specrate">Specrate</a></td>
+<td>Manage specs and changes in a structured workflow</td>
+</tr>
+<tr>
+<td><a href="https://github.com/conorluddy/ios-simulator-skill">iOS Simulator</a></td>
+<td>Interact with iOS Simulator for testing</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kylehughes/the-unofficial-swift-concurrency-migration-skill">Swift Concurrency Migration</a></td>
+<td>Swift Concurrency Migration guide</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gapmiss/obsidian-plugin-skill">Obsidian Plugin</a></td>
+<td>Obsidian.md plugin development</td>
+</tr>
+<tr>
+<td><a href="https://github.com/frmoretto/stream-coding">Stream Coding</a></td>
+<td>Stream Coding methodology</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ameyalambat128/swiftui-skills">SwiftUI Skills</a></td>
+<td>Apple-authored SwiftUI and platform guidance extracted from Xcode</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dragon1086/claude-skills">Tool Advisor</a></td>
+<td>Analyzes prompts and recommends optimal tools, skills, agents, and orchestration patterns</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nedcodes-ok/rule-porter">rule-porter</a></td>
+<td>Convert AI IDE rules between Cursor (.mdc), CLAUDE.md, AGENTS.md, Copilot, and Windsurf. Bidirectional, zero dependencies</td>
+</tr>
+<tr>
+<td><a href="https://github.com/knot0-com/vibe-testing">Vibe Testing</a></td>
+<td>Pressure-test spec documents with LLM reasoning before writing code</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yshishenya/codex-stitch-local">codex-stitch-local</a></td>
+<td>Stitch UI generation with local HTML and screenshots</td>
+</tr>
+<tr>
+<td><a href="https://mantra.gonewx.com">Mantra</a></td>
+<td>AI coding session management - save, restore, and time-travel through Claude Code, Cursor, and Windsurf sessions</td>
+</tr>
+<tr>
+<td><a href="https://github.com/iwe-org/iwe">IWE</a></td>
+<td>CLI-based knowledge graph access for AI agents — structured persistent memory via plain markdown files</td>
+</tr>
+<tr>
+<td><a href="https://github.com/glacierphonk/naming">naming</a></td>
+<td>Metaphor-driven naming for products, SaaS, brands, and open source projects</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ChaosRealmsAI/agent-cli-spec">ai-native-cli</a></td>
+<td>CLI design spec — 98 rules for building agent-safe CLI tools</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hnaymyh123-henry/claude-dev-skill">claude-dev-skill</a></td>
+<td>Turns Claude into a Tech Lead orchestrating parallel Worker Agents through a full dev workflow: PRD alignment, architecture, coding, QA, and PR review</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dadwadw233/claude-code-philosophy">claude-code-philosophy</a></td>
+<td>Skill for reviewing and structuring agent products around harnesses, memory, permissions, recovery, and UX</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dadwadw233/claude-code-harness">claude-code-harness</a></td>
+<td>Harness blueprint skill for request assembly, control loops, memory boundaries, permissions, and recovery</td>
+</tr>
+<tr>
+<td><a href="https://github.com/nedcodes-ok/rule-gen">rule-gen</a></td>
+<td>Generate AI coding rules from your codebase using Google Gemini. Outputs rules for Cursor, Claude Code, Copilot, and Windsurf</td>
+</tr>
+<tr>
+<td><a href="https://github.com/AppDeploy-AI/skills">AppDeploy</a></td>
+<td>Deploy apps with frontend, backend, database, cron, file storage, AI capabilities, auth, and notifications and get a live URL back</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Wreos/mobile-app-developer/tree/main/platforms/Flutter/skills">Dart/Flutter</a></td>
+<td>Community Flutter skills for implementation, testing, API integration, debugging, and release workflows</td>
+</tr>
+</tbody>
+</table>
+<h4 id="data-analysis">Data &amp; Analysis</h4>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill">CSV Summarizer</a></td>
+<td>Analyze CSV files and generate insights with visualizations</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shepsci/kaggle-skill">Kaggle Skill</a></td>
+<td>Complete Kaggle integration — account setup, competition reports, dataset/model downloads, notebook execution, submissions, and badge collection</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shmlkv/dna-claude-analysis">DNA Claude Analysis</a></td>
+<td>Personal genome analysis toolkit with Python scripts analyzing raw DNA data across 17 categories and generating terminal-style HTML visualization</td>
+</tr>
+</tbody>
+</table>
+<h4 id="integration-automation">Integration &amp; Automation</h4>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/SawyerHood/dev-browser">Dev Browser</a></td>
+<td>Web browser capability for agents</td>
+</tr>
+<tr>
+<td><a href="https://github.com/omxyz/lumen">Lumen</a></td>
+<td>Vision-first browser agent with self-healing deterministic replay over CDP</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dannwaneri/vectorize-mcp-worker">Vectorize MCP Worker</a></td>
+<td>Edge-native MCP server patterns for production RAG</td>
+</tr>
+<tr>
+<td><a href="https://github.com/fractalmind-ai/agent-manager-skill">Agent Manager</a></td>
+<td>Manage local CLI AI agents via tmux (start/stop/monitor/assign + cron scheduling)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/hashgraph-online/hol-claude-skills">HOL Claude Skills</a></td>
+<td>AI agent discovery via Registry Broker - /hol-search, /hol-resolve, /hol-chat</td>
+</tr>
+<tr>
+<td><a href="https://github.com/gmickel/sheets-cli">Sheets CLI</a></td>
+<td>Google Sheets CLI automation</td>
+</tr>
+<tr>
+<td><a href="https://github.com/caopulan/Notification-Skill">Notification Skill</a></td>
+<td>Send message notifications for agent workflows</td>
+</tr>
+<tr>
+<td><a href="https://github.com/fabioc-aloha/spotify-skill">Spotify Skill</a></td>
+<td>Spotify API integration</td>
+</tr>
+<tr>
+<td><a href="https://github.com/techgangboss/agentstore">AgentStore</a></td>
+<td>Open-source plugin marketplace with gasless USDC payments, CLI install, and 3-field publishing API</td>
+</tr>
+<tr>
+<td><a href="https://github.com/transloadit/skills">Transloadit Skills</a></td>
+<td>Media processing: video encoding, image manipulation, OCR, and 86+ Robots</td>
+</tr>
+<tr>
+<td><a href="https://github.com/shanjairaj7/commune-skill">commune</a></td>
+<td>Agent-native email inbox — permanent @commune.ai address with full send/receive, semantic search, triage, and webhooks</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Bortlesboat/bitcoin-mcp">bitcoin-mcp</a></td>
+<td>Bitcoin MCP server with 49 tools — fee intelligence, mempool analysis, block/transaction inspection, mining stats, price and supply data</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Ivlad003/plugins">datadog-observability</a></td>
+<td>Query and analyze Datadog logs, metrics, monitors, and traces directly from Claude Code via REST API</td>
+</tr>
+<tr>
+<td><a href="https://github.com/c5huracan/meyhem">meyhem-search</a></td>
+<td>Agent-native web search with feedback-driven ranking via REST API and MCP server</td>
+</tr>
+<tr>
+<td><a href="https://github.com/steel-dev/cli/tree/main/skills/steel-browser">steel-browser</a></td>
+<td>Session-backed browser automation skill for web navigation, extraction, screenshots, and PDFs</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kybernetwork/kyberswap-skills">KyberSwap Skills</a></td>
+<td>Token swap quotes and transactions across 18 EVM chains</td>
+</tr>
+</tbody>
+</table>
+<h4 id="collaboration-project-management">Collaboration &amp; Project Management</h4>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/mhattingpete/claude-skills-marketplace">git-pushing</a></td>
+<td>Automate git operations and repository interactions</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mhattingpete/claude-skills-marketplace">review-implementing</a></td>
+<td>Evaluate code implementation plans</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mhattingpete/claude-skills-marketplace">test-fixing</a></td>
+<td>Detect failing tests and propose fixes</td>
+</tr>
+</tbody>
+</table>
+<h4 id="security-systems">Security &amp; Systems</h4>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/mhattingpete/claude-skills-marketplace">computer-forensics</a></td>
+<td>Digital forensics analysis and investigation</td>
+</tr>
+<tr>
+<td><a href="https://github.com/grittygrease/safe-encryption-skill">safe-encryption-skill</a></td>
+<td>Modern encryption alternative to GPG/PGP with post-quantum support, composable authentication, and agent-to-agent communication</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jthack/threat-hunting-with-sigma-rules-skill">Threat Hunting</a></td>
+<td>Hunt for threats using Sigma detection rules</td>
+</tr>
+<tr>
+<td><a href="https://github.com/HeyVincent-ai/agent-skills/tree/main/wallet">Vincent Wallet</a></td>
+<td>Secure EVM wallet for agent transfers, swaps, and transactions</td>
+</tr>
+<tr>
+<td><a href="https://github.com/HeyVincent-ai/agent-skills/tree/main/polymarket">Vincent Polymarket</a></td>
+<td>Polymarket prediction market trading for agents</td>
+</tr>
+<tr>
+<td><a href="https://github.com/imran-siddique/agent-os">Agent OS Governance</a></td>
+<td>Kernel-level governance for AI agents — deterministic policy enforcement, compliance checking, audit logging</td>
+</tr>
+</tbody>
+</table>
+<h4 id="advanced-research">Advanced &amp; Research</h4>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering">Context Engineering</a></td>
+<td>Context engineering techniques</td>
+</tr>
+<tr>
+<td><a href="https://github.com/jakedahn/pomodoro">Pomodoro System Skill</a></td>
+<td>System Skill Pattern (skills that remember &amp; improve)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/yzfly/Mind-Cloning-Engineering">Mind Cloning</a></td>
+<td>Mind cloning with LLM skills</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="official-tutorials-and-guides">Official Tutorials and Guides</h2>
+<h3 id="claude-and-anthropic">Claude and Anthropic</h3>
+<ul>
+<li><a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude">Using skills in Claude</a> - Official quick start guide</li>
+<li><a href="https://support.claude.com/en/articles/12512198-creating-custom-skills">How to create custom skills</a> - Step-by-step authoring</li>
+<li><a href="https://code.claude.com/docs/en/skills">Claude Code Skills Documentation</a> - Official reference</li>
+</ul>
+<h3 id="github-copilot">GitHub Copilot</h3>
+<ul>
+<li><a href="https://docs.github.com/copilot/concepts/agents/about-agent-skills">About Agent Skills</a> - GitHub documentation</li>
+<li><a href="https://code.visualstudio.com/docs/copilot/customization/agent-skills">VS Code Agent Skills</a> - VS Code integration</li>
+</ul>
+<h3 id="model-context-protocol-mcp">Model Context Protocol (MCP)</h3>
+<ul>
+<li><a href="https://modelcontextprotocol.io/">MCP Official Documentation</a> - The open standard</li>
+<li><a href="https://modelcontextprotocol.io/docs/first-server">Build your first MCP Server</a> - Python/TypeScript guide</li>
+<li><a href="https://github.com/modelcontextprotocol/servers">MCP Server Examples</a> - Official server implementations</li>
+</ul>
+<hr />
+<h2 id="using-skills">Using Skills</h2>
+<h3 id="using-skills-in-claudeai">Using Skills in Claude.ai</h3>
+<ol>
+<li>Click the skill icon in your chat interface.</li>
+<li>Add skills from the marketplace or upload custom skills.</li>
+<li>Claude automatically activates relevant skills based on your task.</li>
+</ol>
+<h3 id="using-skills-in-google-antigravity">Using Skills in Google Antigravity</h3>
+<p>Antigravity supports two types of skills:</p>
+<ul>
+<li><strong>Workspace Skills</strong>: Project-specific skills located in <code>/.agent/skills/</code></li>
+<li><strong>Global Skills</strong>: User-wide skills located in <code>~/.gemini/antigravity/skills</code></li>
+</ul>
+<p>For more details, see the <a href="https://antigravity.google/docs/skills">official documentation</a>.</p>
+<h3 id="using-skills-in-claude-code">Using Skills in Claude Code</h3>
+<p>Place the skill in your configuration directory:</p>
+<pre><code class="language-bash">mkdir -p ~/.claude/skills/
+cp -r skill-name ~/.claude/skills/
+</code></pre>
+<p>Verify skill metadata:</p>
+<pre><code class="language-bash">head ~/.claude/skills/skill-name/SKILL.md
+</code></pre>
+<p>The skill loads automatically and activates when relevant.</p>
+<h3 id="using-skills-in-codex">Using Skills in Codex</h3>
+<p><strong>Create a skill:</strong></p>
+<p>Use the built-in <code>$skill-creator</code> skill in Codex. Describe what you want your skill to do, and Codex will bootstrap it for you.</p>
+<p>If you install <code>$create-plan</code> (experimental) with <code>$skill-installer create-plan</code>, Codex will create a plan before writing files.</p>
+<p>You can also create a skill manually by creating a folder with a <code>SKILL.md</code> file:</p>
+<pre><code class="language-markdown">---
+name: skill-name
+description: Description that helps Codex select the skill
+metadata:
+  short-description: Optional user-facing description
+---
 
-        <section class="glass-section" id="how-to-use">
-            <h2>How to Use Skills</h2>
-            <div class="grid-content">
-                <div class="glass-card">
-                    <h3>Claude.ai</h3>
-                    <p>Click the skill icon in the chat interface. Add skills from the marketplace or upload custom skills. Claude will activate them automatically when relevant.</p>
-                </div>
-                <div class="glass-card">
-                    <h3>Google Antigravity</h3>
-                    <p>Antigravity supports Workspace Skills (located in <code>/.agent/skills/</code>) and Global Skills (located in <code>~/.gemini/antigravity/skills</code>).</p>
-                </div>
-                <div class="glass-card">
-                    <h3>VS Code / GitHub Copilot</h3>
-                    <p>Store your skills in directories containing a <code>SKILL.md</code> file under <code>.github/skills/</code>.</p>
-                </div>
-                <div class="glass-card">
-                    <h3>OpenAI Codex</h3>
-                    <p>Use the built-in <code>$skill-creator</code> or install new skills from directories using the <code>$skill-installer</code>.</p>
-                </div>
-            </div>
-        </section>
+Skill instructions for the Codex agent to follow when using this skill.
+</code></pre>
+<p><strong>Install new skills:</strong></p>
+<p>Download skills from GitHub using the <code>$skill-installer</code> skill:</p>
+<pre><code class="language-bash">$skill-installer linear
+</code></pre>
+<p>You can also prompt the installer to download skills from other repositories. After installing a skill, restart Codex to pick up new skills.</p>
+<h3 id="using-skills-in-vs-code">Using Skills in VS Code</h3>
+<p>Skills are stored in directories with a <code>SKILL.md</code> file. VS Code supports skills in two locations:</p>
+<ul>
+<li><code>.github/skills/</code> - Recommended location for all new skills</li>
+<li><code>.claude/skills/</code> - Legacy location, also supported</li>
+</ul>
+<p><strong>Create a skill:</strong></p>
+<ol>
+<li>Create a <code>.github/skills</code> directory in your workspace</li>
+<li>Create a subdirectory for your skill (e.g., <code>.github/skills/webapp-testing</code>)</li>
+<li>Create a <code>SKILL.md</code> file with the following structure:</li>
+</ol>
+<pre><code class="language-markdown">---
+name: skill-name
+description: Description of what the skill does and when to use it
+---
 
-        <section class="glass-section" id="how-to-create">
-            <h2>How to Create a Skill</h2>
-            <p>Skills are straightforward markdown files. Below is the basic structure you need to get started.</p>
-            <div class="code-block glass-card">
-<pre><code>---
+# Skill Instructions
+
+Your detailed instructions, guidelines, and examples go here...
+</code></pre>
+<ol>
+<li>Optionally, add scripts, examples, or other resources to your skill's directory</li>
+</ol>
+<h3 id="using-skills-in-copilot-cli">Using Skills in Copilot CLI</h3>
+<p><strong>Adding skills to your repository:</strong></p>
+<ol>
+<li>Create a <code>.github/skills</code> directory (skills in <code>.claude/skills</code> are also supported)</li>
+<li>Create a subdirectory for your skill (e.g., <code>.github/skills/webapp-testing</code>)</li>
+<li>Create a <code>SKILL.md</code> file with your skill's instructions</li>
+</ol>
+<p><strong>SKILL.md structure:</strong></p>
+<ul>
+<li><code>name</code> (required): A unique lowercase identifier using hyphens for spaces</li>
+<li><code>description</code> (required): What the skill does and when Copilot should use it</li>
+<li><code>license</code> (optional): License that applies to this skill</li>
+<li>Markdown body with instructions, examples, and guidelines</li>
+</ul>
+<p><strong>Example SKILL.md:</strong></p>
+<pre><code class="language-markdown">---
+name: github-actions-failure-debugging
+description: Guide for debugging failing GitHub Actions workflows.
+---
+
+To debug failing GitHub Actions workflows:
+
+1. Use `list_workflow_runs` to look up recent workflow runs
+2. Use `summarize_job_log_failures` to get an AI summary of failed jobs
+3. Use `get_job_logs` for full detailed failure logs if needed
+4. Try to reproduce the failure in your environment
+5. Fix the failing build
+</code></pre>
+<p>When performing tasks, Copilot decides when to use skills based on your prompt and the skill's description. The <code>SKILL.md</code> file is injected into the agent's context.</p>
+<h3 id="using-mcp-servers-claude-desktop">Using MCP Servers (Claude Desktop)</h3>
+<p>Edit your configuration file:
+- <strong>macOS</strong>: <code>~/Library/Application Support/Claude/claude_desktop_config.json</code>
+- <strong>Windows</strong>: <code>%APPDATA%\Claude\claude_desktop_config.json</code></p>
+<p>Example Configuration:</p>
+<pre><code class="language-json">{
+  &quot;mcpServers&quot;: {
+    &quot;filesystem&quot;: {
+      &quot;command&quot;: &quot;npx&quot;,
+      &quot;args&quot;: [
+        &quot;-y&quot;,
+        &quot;@modelcontextprotocol/server-filesystem&quot;,
+        &quot;/Users/username/Desktop&quot;
+      ]
+    }
+  }
+}
+</code></pre>
+<hr />
+<h2 id="creating-skills">Creating Skills</h2>
+<p>Skills are instruction bundles that tell the agent how to perform specific tasks. They are not executable code by default.</p>
+<h3 id="skill-structure">Skill Structure</h3>
+<pre><code>skill-name/
+├── SKILL.md          # Required: Instructions and metadata
+├── scripts/          # Optional: Helper scripts
+├── templates/        # Optional: Document templates
+└── resources/        # Optional: Reference files
+</code></pre>
+<h3 id="basic-skillmd-template">Basic SKILL.md Template</h3>
+<pre><code class="language-markdown">---
 name: my-skill-name
 description: A clear description of what this skill does.
 ---
@@ -66,32 +876,111 @@ description: A clear description of what this skill does.
 Detailed description of the skill's purpose.
 
 ## When to Use This Skill
+
 - Use case 1
 - Use case 2
 
 ## Instructions
+
 [Detailed instructions for the agent on how to execute this skill]
+
+## Examples
+
+[Real-world examples]
 </code></pre>
+<h3 id="mcp-server-example-python">MCP Server Example (Python)</h3>
+<p>For skills that need to connect to external data sources, you can create an MCP server:</p>
+<pre><code class="language-bash">pip install fastmcp
+</code></pre>
+<p>server.py:</p>
+<pre><code class="language-python">from fastmcp import FastMCP
+
+mcp = FastMCP(&quot;My Server&quot;)
+
+@mcp.tool()
+def hello_world(name: str = &quot;World&quot;) -&gt; str:
+    &quot;&quot;&quot;A simple tool that says hello.&quot;&quot;&quot;
+    return f&quot;Hello, {name}!&quot;
+
+if __name__ == &quot;__main__&quot;:
+    mcp.run()
+</code></pre>
+<hr />
+<h2 id="community-resources">Community Resources</h2>
+<h3 id="langchain-tools">LangChain Tools</h3>
+<ul>
+<li><a href="https://python.langchain.com/docs/integrations/tools/google_search/">Google Search</a> - Wrapper around SerpApi</li>
+<li><a href="https://python.langchain.com/docs/integrations/tools/wikipedia/">Wikipedia</a> - Fetch summaries from Wikipedia</li>
+<li><a href="https://python.langchain.com/docs/integrations/tools/python/">Python REPL</a> - Execute Python code</li>
+<li><a href="https://python.langchain.com/docs/how_to/custom_tools/">Custom Tools Guide</a> - How to use the <code>@tool</code> decorator</li>
+</ul>
+<h3 id="articles-research">Articles &amp; Research</h3>
+<ul>
+<li><a href="https://dev.to/dannwaneri/i-found-50-companies-accidentally-breaking-hipaa-with-chatgpt-1olc">I found 50 companies accidentally breaking HIPAA with ChatGPT</a> - Analysis of privacy risks in AI</li>
+<li><a href="https://dev.to/dannwaneri/i-built-a-production-rag-system-for-5month-most-alternatives-cost-100-200-21hj">I built a Production RAG System for $5/month</a> - Cost-optimization guide for RAG architectures</li>
+</ul>
+<hr />
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="what-are-agent-skills_1">What are Agent Skills?</h3>
+<p>Agent Skills are instruction files that teach AI assistants how to do specific tasks. Think of them as "how-to guides" that the AI reads and follows. They only load when needed, so the AI stays fast and focused.</p>
+<h3 id="how-are-agent-skills-different-from-fine-tuning">How are Agent Skills different from fine-tuning?</h3>
+<p>Fine-tuning permanently changes how an AI thinks (expensive and hard to update). Agent Skills are just instruction files, you can update, swap, or share them anytime without touching the AI itself.</p>
+<h3 id="whats-the-difference-between-agent-skills-and-mcp">What's the difference between Agent Skills and MCP?</h3>
+<p>They do different things and work great together:
+- <strong>Agent Skills</strong> = teach the AI <em>how</em> to do something (workflows, best practices)
+- <strong>MCP</strong> = help the AI <em>access</em> things (APIs, databases, external tools)</p>
+<h3 id="which-ai-tools-support-agent-skills">Which AI tools support Agent Skills?</h3>
+<p>Currently supported: <strong>Claude</strong> (Claude.ai and Claude Code), <strong>GitHub Copilot</strong>, <strong>VS Code</strong>, <strong>Codex</strong> (OpenAI), <strong>Antigravity</strong> (Google), <strong>Gemini CLI</strong>, and <strong>Kiro</strong>. The list is growing as more tools adopt the standard.</p>
+<h3 id="do-agent-skills-run-code">Do Agent Skills run code?</h3>
+<p>No. Skills are just text instructions, the AI reads and follows them like a recipe. If you need to run actual code, you'd use something like MCP servers alongside skills.</p>
+<h3 id="how-do-i-create-my-first-agent-skill">How do I create my first Agent Skill?</h3>
+<ol>
+<li>Create a <code>SKILL.md</code> file with a name and description at the top</li>
+<li>Write clear, step-by-step instructions in the file</li>
+<li>Put it in your <code>.github/skills/</code> or <code>.claude/skills/</code> folder</li>
+<li>Test it out!</li>
+</ol>
+<p>Full guide: <a href="https://support.claude.com/en/articles/12512198-creating-custom-skills">How to create custom skills</a></p>
+<hr />
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are welcome. See <strong><a href="CONTRIBUTING.md">CONTRIBUTING.md</a></strong> for full guidelines.</p>
+<p>Quick summary:
+- Follow the skill template structure
+- Provide clear, actionable instructions
+- Include working examples where appropriate
+- Document trade-offs and potential issues
+- Keep SKILL.md under 500 lines for optimal performance
+- Verify that skills actually exist before adding them</p>
+<hr />
+<h2 id="license">License</h2>
+<p>MIT License - see LICENSE file for details.</p>
+<hr />
+<h2 id="references">References</h2>
+<p>The principles in these skills are derived from research and production experience at leading AI labs and framework developers.</p>
+<ul>
+<li><a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude">Anthropic: Using skills in Claude</a></li>
+<li><a href="https://support.claude.com/en/articles/12512198-creating-custom-skills">Anthropic: Creating custom skills</a></li>
+<li><a href="https://code.claude.com/docs/en/skills">Claude Code Skills Documentation</a></li>
+<li><a href="https://docs.github.com/copilot/concepts/agents/about-agent-skills">GitHub Copilot: About Agent Skills</a></li>
+<li><a href="https://modelcontextprotocol.io/">Model Context Protocol Documentation</a></li>
+</ul>
+<hr />
+<h2 id="agent-skills-trends-capabilities-2026">Agent Skills Trends &amp; Capabilities (2026)</h2>
+<p>In 2026, the AI agent ecosystem has dramatically shifted from reactive chat interfaces to <strong>autonomous, goal-driven systems</strong> executing end-to-end multi-step workflows. This period, often called the "Agent Leap", is defined by a move toward end-to-end execution of complex tasks.</p>
+<h3 id="1-autonomous-execution-goal-orientation">1. Autonomous Execution &amp; Goal Orientation</h3>
+<p>Modern agents move past simple "prompt-response" models. They break down broad, abstract objectives into multi-step strategic plans, weighing trade-offs and executing sequences independently over long horizons.</p>
+<h3 id="2-multi-agent-orchestration">2. Multi-Agent Orchestration</h3>
+<p>Complex repositories and operations are managed by specialized agent teams (e.g., a documentation agent, a testing agent, and a coding agent). These teams are coordinated by "manager" agents that synthesize deliverables and resolve conflicts securely.</p>
+<h3 id="3-direct-access-agentic-ides">3. Direct Access &amp; Agentic IDEs</h3>
+<p>Instead of just returning textual code solutions, AI agents are increasingly given deep, authorized access to terminals, environments, and filesystems through protocols like Model Context Protocol (MCP). Environments like Cursor, Windsurf, Copilot, and Claude Code have evolved into "Agentic IDEs" where agents natively execute commands and monitor telemetry in real-time.</p>
+<h3 id="4-multimodality-deep-research">4. Multimodality &amp; "Deep Research"</h3>
+<p>Deep Research agents natively parse not just text, but images, video, and audio data. They browse the live internet dynamically, executing javascript, passing captchas, mapping sites, and verifying sources structurally instead of relying solely on older web scraping pipelines.</p>
+<h3 id="5-invisible-enterprise-integration">5. Invisible Enterprise Integration</h3>
+<p>Capabilities are becoming embedded inside core enterprise workflows (CRMs, task boards, internal portals) enabling low-code/no-code users to deploy complex problem-solving agents right where the data lives.</p>
             </div>
-            <p>Create a directory with the name of your skill, and place this <code>SKILL.md</code> file inside it. You can optionally include helper scripts or document templates.</p>
-        </section>
-
-        <section class="glass-section" id="where-to-find">
-            <h2>Where to Find Updated Skills</h2>
-            <p>The community is constantly building and sharing new skills. Here are the top repositories:</p>
-            <ul class="resource-list">
-                <li><a href="https://github.com/anthropics/skills" target="_blank">Anthropics Official Skills</a></li>
-                <li><a href="https://github.com/openai/skills" target="_blank">OpenAI Codex Skills</a></li>
-                <li><a href="https://github.com/huggingface/skills" target="_blank">HuggingFace Skills</a></li>
-                <li><a href="https://agentskill.sh" target="_blank">agentskill.sh Directory</a></li>
-                <li><a href="https://www.tutuoai.com/" target="_blank">TutuoAI Marketplace</a></li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>Designed with glassmorphism aesthetics. Maintained by the community.</p>
-        </footer>
+        </main>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
