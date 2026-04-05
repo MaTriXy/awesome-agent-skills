@@ -113,11 +113,11 @@ export default function Navbar() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="w-full bg-blue-600 dark:bg-blue-900 text-white flex items-center justify-center py-2 px-4 relative"
+            className="w-full bg-neutral-100 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800 text-neutral-800 dark:text-neutral-200 flex items-center justify-center py-2 px-4 relative"
           >
             <div className="text-xs sm:text-sm font-medium text-center">
-              <span className="bg-yellow-400 text-yellow-900 text-[10px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider mr-2 align-middle">Sponsored</span>
-              Your ad here. Contact <a href="mailto:haileycheng@proton.me" className="underline font-bold hover:text-blue-200">haileycheng@proton.me</a> for sponsorship.
+              <span className="bg-neutral-800 text-white dark:bg-white dark:text-neutral-900 text-[10px] font-bold px-1.5 py-0.5 rounded-sm uppercase tracking-wider mr-2 align-middle">Sponsored</span>
+              Your ad here. Contact <a href="mailto:haileycheng@proton.me" className="underline font-bold hover:text-black dark:hover:text-white">haileycheng@proton.me</a> for sponsorship.
             </div>
             <button 
               onClick={() => setBannerVisible(false)}

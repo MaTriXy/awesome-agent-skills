@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Github } from "../Icons";
 import Link from "next/link";
 import { useTranslations } from "@/lib/i18n";
-import AgentFlowChart from "../animations/AgentFlowChart";
+import Tetris3D from "../animations/Tetris3D";
 
 export default function Hero() {
   const t = useTranslations();
@@ -51,7 +51,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Right Column: Flow Chart */}
+        {/* Right Column: Playable Tetris */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -59,7 +59,7 @@ export default function Hero() {
           className="w-full order-1 lg:order-2 flex justify-center lg:justify-end mt-8 lg:mt-0"
         >
           <div className="w-full max-w-[320px] sm:max-w-md md:max-w-lg mx-auto lg:mx-0">
-            <AgentFlowChart />
+            <Tetris3D />
           </div>
         </motion.div>
       </div>

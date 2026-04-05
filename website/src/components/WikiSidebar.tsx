@@ -124,7 +124,7 @@ export default function WikiSidebar() {
   };
 
   return (
-    <aside className={`w-64 h-[calc(100vh-3.5rem)] fixed left-0 top-14 overflow-y-auto sidebar-scroll backdrop-blur-sm bg-white/90 dark:bg-neutral-950/90 border-r border-neutral-200/60 dark:border-neutral-800/60 py-6 px-4 transition-transform duration-300 ease-in-out z-40 ${
+    <aside className={`w-64 h-[calc(100vh-3.5rem)] hidden md:block fixed left-0 top-14 overflow-y-auto sidebar-scroll backdrop-blur-sm bg-white/90 dark:bg-neutral-950/90 border-r border-neutral-200/60 dark:border-neutral-800/60 py-6 px-4 transition-transform duration-300 ease-in-out z-40 ${
       isOpen ? "translate-x-0" : "-translate-x-full"
     }`}>
       <div className="space-y-5">
