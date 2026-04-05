@@ -42,15 +42,27 @@ export default function UsingSkills() {
       <div className="grid lg:grid-cols-2 gap-8">
         {/* Steps */}
         <div className="space-y-4">
-          {steps.map((s) => (
-            <div key={s.step} className="flex gap-5 p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900">
-              <span className="text-xs font-bold font-mono text-neutral-300 dark:text-neutral-600 mt-0.5 w-5 shrink-0">{s.step}</span>
-              <div>
-                <h3 className="text-sm font-semibold text-neutral-900 dark:text-white mb-1">{s.title}</h3>
-                <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">{s.description}</p>
-              </div>
+          <div className="flex gap-5 p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900">
+            <span className="text-xl mt-0.5 w-6 shrink-0 text-center">🕵️‍♂️</span>
+            <div>
+              <h3 className="text-sm font-bold text-neutral-900 dark:text-white mb-1">Step 1: Scuff the Directory</h3>
+              <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">Don't reinvent the wheel! Browse the Directory above. Each skill is just a friendly folder that your AI is literally <i>dying</i> to read.</p>
             </div>
-          ))}
+          </div>
+          <div className="flex gap-5 p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900">
+            <span className="text-xl mt-0.5 w-6 shrink-0 text-center">🚚</span>
+            <div>
+              <h3 className="text-sm font-bold text-neutral-900 dark:text-white mb-1">Step 2: The "Drop-In" Move</h3>
+              <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">Simply hurl that folder into <code>.github/skills/</code>. Modern IDEs like Cursor and Claude Code will sniff it out instantly and go "Oh wow, new knowledge!"</p>
+            </div>
+          </div>
+          <div className="flex gap-5 p-5 border border-neutral-200 dark:border-neutral-800 rounded-xl bg-white dark:bg-neutral-900">
+            <span className="text-xl mt-0.5 w-6 shrink-0 text-center">🪄</span>
+            <div>
+              <h3 className="text-sm font-bold text-neutral-900 dark:text-white mb-1">Step 3: Magic Happens</h3>
+              <p className="text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">Your agent is now officially "skilled." No more pasting 50-line prompts into every new chat window. It just... <i>knows</i>.</p>
+            </div>
+          </div>
         </div>
 
         {/* Code panels */}

@@ -166,7 +166,7 @@ export default function Navbar() {
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" && searchQuery.trim()) {
-                  window.find(searchQuery.trim());
+                  (window as any).find(searchQuery.trim());
                 }
               }}
               placeholder="Search docs (Website Only)..."

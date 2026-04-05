@@ -4,10 +4,10 @@ import { FolderOpen, FileText, Code2, Layers, ArrowRight } from "lucide-react";
 import { useTranslations } from "@/lib/i18n";
 
 const structure = [
-  { Icon: FolderOpen, path: "my-skill/", desc: "Kebab-case root folder" },
-  { Icon: FileText, path: "├── SKILL.md", desc: "Required: the core instructions" },
-  { Icon: Code2, path: "├── scripts/", desc: "Optional: helper scripts" },
-  { Icon: Layers, path: "└── templates/", desc: "Optional: file output templates" },
+  { Icon: FolderOpen, path: "my-skill/", desc: "A cool name for your invention" },
+  { Icon: FileText, path: "├── SKILL.md", desc: "Required: The 'Brain' of the skill" },
+  { Icon: Code2, path: "├── scripts/", desc: "Optional: Secret sauces & helpers" },
+  { Icon: Layers, path: "└── templates/", desc: "Optional: Fancy pre-filled files" },
 ];
 
 export default function CreatingSkills() {
@@ -47,15 +47,15 @@ export default function CreatingSkills() {
             </div>
             <pre className="px-4 py-4 text-sm leading-7 font-mono text-neutral-600 dark:text-neutral-400 overflow-x-auto">
               <code>{`---
-name: your-skill-name
-description: Clear, accurate use-case summary.
+name: awesome-new-skill
+description: Tell the AI what this does in plain English.
 ---
 
 # Instructions
 
-1. Use explicit headers for each stage.
-2. Provide step-by-step logic.
-3. Define success and failure criteria.`}</code>
+1. Explain it like the AI is your smart intern.
+2. Give it step-by-step logic (it loves lists).
+3. Tell it when to STOP or when it fails.`}</code>
             </pre>
           </div>
 

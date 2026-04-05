@@ -1,6 +1,6 @@
 "use client";
 
-import { MessageCircle } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Github, Twitter } from "./Icons";
 import Link from "next/link";
 
@@ -43,11 +43,11 @@ export default function Footer() {
               <a href="https://github.com/heilcheng/awesome-agent-skills" className="p-3 bg-zinc-50 dark:bg-zinc-900 rounded-2xl hover:scale-110 transition-transform">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="p-3 bg-zinc-50 dark:bg-zinc-900 rounded-2xl hover:scale-110 transition-transform">
+              <a href="https://x.com/haileyhmt" target="_blank" rel="noopener noreferrer" className="p-3 bg-zinc-50 dark:bg-zinc-900 rounded-2xl hover:scale-110 transition-transform">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="p-3 bg-zinc-50 dark:bg-zinc-900 rounded-2xl hover:scale-110 transition-transform">
-                <MessageCircle className="w-5 h-5" />
+              <a href="mailto:haileycheng@proton.me" className="p-3 bg-zinc-50 dark:bg-zinc-900 rounded-2xl hover:scale-110 transition-transform">
+                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
