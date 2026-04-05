@@ -1,13 +1,25 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Moon, Sun, Menu, X, Search, Globe } from "lucide-react";
-import { Github } from "./Icons";
 import Link from "next/link";
+import { useTheme } from "next-themes";
+import { Search, Moon, Sun, Globe, Menu, X, PanelLeft, Star, Eye } from "lucide-react";
+import { Github } from "./Icons";
 import { motion, AnimatePresence } from "framer-motion";
-import { useLanguage, useTranslations, LANGUAGES } from "@/lib/i18n";
+import { LANGUAGES, useLanguage, useTranslations } from "@/lib/i18n";
 import { useSidebar } from "@/lib/SidebarContext";
-import { PanelLeft } from "lucide-react";
+
+const LOCAL_SECTIONS = [
+  { id: "what-are-skills", label: "What Are Agent Skills?" },
+  { id: "how-it-works", label: "How It Works" },
+  { id: "directory", label: "Skill Directory" },
+  { id: "quality-standards", label: "Quality Standards" },
+  { id: "using-skills", label: "Using Skills" },
+  { id: "creating-skills", label: "Creating Skills" },
+  { id: "tutorials", label: "Tutorials" },
+  { id: "faq", label: "FAQ" },
+  { id: "contributing", label: "Contributing" }
+];
 
 const mobileNavItems = [
   "What Is It?", "Directory", "Quality Standards",
@@ -21,6 +33,8 @@ export default function Navbar() {
   const [langOpen, setLangOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
+  const [githubStars, setGithubStars] = useState<number | null>(null);
+
   const langRef = useRef<HTMLDivElement>(null);
   const searchRef = useRef<HTMLInputElement>(null);
   const { lang, setLang } = useLanguage();
@@ -30,6 +44,16 @@ export default function Navbar() {
   useEffect(() => {
     setMounted(true);
     setDark(document.documentElement.classList.contains("dark"));
+
+    // Fetch GitHub Stars
+    fetch("https://api.github.com/repos/heilcheng/awesome-agent-skills")
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.stargazers_count) {
+          setGithubStars(data.stargazers_count);
+        }
+      })
+      .catch((e) => console.log("Failed to fetch stars", e));
   }, []);
 
   // Scroll progress
@@ -77,6 +101,8 @@ export default function Navbar() {
 
   const currentLang = LANGUAGES.find((l) => l.code === lang);
 
+  const filterSearch = LOCAL_SECTIONS.filter(s => s.label.toLowerCase().includes(searchQuery.toLowerCase()));
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-neutral-950/80 border-b border-neutral-200/60 dark:border-neutral-800/60 h-14">
       <div className="w-full h-full flex items-center justify-between px-6">
@@ -103,7 +129,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Center: search */}
+        {/* Center: Website local search */}
         <div className="hidden md:flex flex-1 max-w-sm mx-8">
           <div className="relative w-full">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
@@ -114,31 +140,54 @@ export default function Navbar() {
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" && searchQuery.trim()) {
-                  window.open(`https://github.com/heilcheng/awesome-agent-skills/search?q=${encodeURIComponent(searchQuery.trim())}`, '_blank');
-                  setSearchQuery("");
-                  searchRef.current?.blur();
+                  window.find(searchQuery.trim());
                 }
               }}
-              placeholder={t.nav.search}
+              placeholder="Search docs (Website Only)..."
               className="w-full pl-9 pr-10 py-1.5 text-sm bg-neutral-100/80 dark:bg-neutral-800/80 border border-neutral-200 dark:border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-600 text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400"
             />
             <kbd className="absolute right-2 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10px] font-mono font-semibold text-neutral-400 bg-neutral-200 dark:bg-neutral-700 rounded pointer-events-none">
               ⌘K
             </kbd>
+
+            {/* Dropdown Local Results */}
+            {searchQuery && (
+              <div className="absolute top-11 left-0 w-full bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 rounded-lg shadow-xl shadow-black/10 overflow-hidden flex flex-col py-1 z-50">
+                {filterSearch.map((s) => (
+                  <Link 
+                    key={s.id} 
+                    href={`#${s.id}`} 
+                    onClick={() => { setSearchQuery(""); searchRef.current?.blur(); }} 
+                    className="block px-4 py-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 text-sm text-neutral-800 dark:text-neutral-200"
+                  >
+                    Go to: <span className="font-semibold">{s.label}</span>
+                  </Link>
+                ))}
+                {filterSearch.length === 0 && (
+                  <div className="px-4 py-2 text-xs text-neutral-500 italic">Hit 'Enter' to text-search the page.</div>
+                )}
+              </div>
+            )}
           </div>
         </div>
 
-        {/* Right: actions */}
+        {/* Right: actions & Topbar Metrics */}
         <div className="flex items-center gap-2">
-          <a
-            href="https://github.com/heilcheng/awesome-agent-skills"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden lg:flex items-center gap-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors"
-          >
-            <Github className="w-4 h-4" />
-            <span>heilcheng/awesome-agent-skills</span>
-          </a>
+          
+          <div className="hidden lg:flex items-center gap-3 mr-3 px-3 py-1 bg-neutral-100 dark:bg-neutral-800 rounded-full border border-neutral-200 dark:border-neutral-700">
+            {/* Github Stars Area */}
+            <a href="https://github.com/heilcheng/awesome-agent-skills" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs font-semibold text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors">
+              <Star className="w-3.5 h-3.5 fill-current text-yellow-500" />
+              {githubStars ? (githubStars >= 1000 ? `${(githubStars/1000).toFixed(1)}k` : githubStars) : "..."}
+            </a>
+            <div className="w-px h-3 bg-neutral-300 dark:bg-neutral-600" />
+            {/* Static Visits Counter */}
+            <div className="flex items-center gap-1.5 text-xs font-semibold text-neutral-700 dark:text-neutral-300 pointer-events-none" title="All time visits">
+              <Eye className="w-3.5 h-3.5" />
+              14,203
+            </div>
+          </div>
+
           <div className="hidden lg:block w-px h-4 bg-neutral-200 dark:bg-neutral-700" />
 
           {/* Language selector */}
@@ -188,7 +237,7 @@ export default function Navbar() {
             {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
 
-          {/* Mobile menu */}
+          {/* Mobile menu focus */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="lg:hidden p-1.5 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors text-neutral-500"

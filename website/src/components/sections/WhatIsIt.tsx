@@ -2,7 +2,6 @@
 
 import { Package, Code2, BookOpen } from "lucide-react";
 import { useTranslations } from "@/lib/i18n";
-import SkillVisualization from "@/components/animations/SkillVisualization";
 
 export default function WhatIsIt() {
   const t = useTranslations();
@@ -21,10 +20,6 @@ export default function WhatIsIt() {
       <p className="text-neutral-600 dark:text-neutral-400 mb-10 max-w-2xl text-base leading-relaxed">
         Skills are simple text files (called <code>SKILL.md</code>) that teach an AI how to do specific tasks. When you ask the AI to do something, it finds the right skill, reads the instructions, and gets to work.
       </p>
-
-      <div className="mb-12">
-        <SkillVisualization />
-      </div>
 
       <div className="grid md:grid-cols-3 gap-4 mb-10">
         {cards.map(({ Icon, title, desc }) => (
